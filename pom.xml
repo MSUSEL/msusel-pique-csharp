@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>edu.montana.gsoc.msusel</groupId>
+        <artifactId>msusel-parent</artifactId>
+        <version>1.1.1</version>
+    </parent>
+    <groupId>org.example</groupId>
+    <artifactId>msusel-pique-csharp</artifactId>
+    <version>0.0.1</version>
+    <name>msusel-pique-csharp</name>
+    <description>MSU PIQUE quality model implementation for binaries</description>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.montana.gsoc.msusel</groupId>
+            <artifactId>msusel-pique</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.orientechnologies</groupId>
+            <artifactId>orientdb-client</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>org.json</artifactId>
+            <version>chargebee-1.0</version>
+        </dependency>
+    </dependencies>
+
+
+    <repositories>
+        <repository>
+            <id>msusel-maven-repo</id>
+            <name>msusel-maven-repo</name>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+
+            <url>https://raw.github.com/MSUSEL/msusel-maven-repo/releases</url>
+        </repository>
+        <repository>
+            <id>snapshot</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>synergian-repo</id>
+            <url>https://raw.github.com/synergian/wagon-git/releases</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <distributionManagement>
+        <repository>
+            <id>msusel-maven-repo</id>
+            <name>msusel-maven-repo</name>
+            <url>git:releases://git@github.com:MSUSEL/msusel-maven-repo.git</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+</project>
