@@ -2,8 +2,8 @@
     "name": "CSharp Quality Model",
     "additionalData": {},
     "global_config": {
-    "benchmark_strategy": "calibration.CShaprBenchmarker",
-    "normalizer_strategy": "evaluation.NoNormalizer"
+    "benchmark_strategy": "pique.calibration.StandardDeviationBenchmarker",
+    "normalizer_strategy": "evaluation.Normalizer"
   },
     "factors": {
         "tqi": {

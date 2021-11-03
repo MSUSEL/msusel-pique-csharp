@@ -95,7 +95,7 @@ public class SingleProjectEvaluator {
         // Apply tool results to Project object
         project.updateDiagnosticsWithFindings(allDiagnostics);
 
-        double tqiValue = project.evaluateTqi();
+        BigDecimal tqiValue = project.evaluateTqi();
 
         // Create a file of the results and return its path
         return project.exportToJson(resultsDir,true);

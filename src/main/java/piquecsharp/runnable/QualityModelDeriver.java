@@ -8,6 +8,7 @@ import pique.model.*;
 import tool.RoslynatorAnalyzer;
 import utilities.PiqueProperties;
 
+import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -68,7 +69,7 @@ public class QualityModelDeriver {
 
         // (1) Derive thresholds
         IBenchmarker benchmarker = qmDesign.getBenchmarker();
-        Map<String, Double[]> measureNameThresholdMappings = benchmarker.deriveThresholds(
+        Map<String, BigDecimal[]> measureNameThresholdMappings = benchmarker.deriveThresholds(
                 benchmarkRepository, qmDesign, tools, projectRootFlag);
 
         // (2) Elicitate weights
