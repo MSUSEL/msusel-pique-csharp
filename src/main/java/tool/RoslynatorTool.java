@@ -1,15 +1,12 @@
 package tool;
 
 import pique.analysis.Tool;
-import pique.model.Diagnostic;
 import pique.utility.FileUtility;
 
 import java.io.File;
-import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Map;
 
 public abstract class  RoslynatorTool extends Tool  {
 
@@ -44,6 +41,6 @@ public abstract class  RoslynatorTool extends Tool  {
         }
 
         setToolRoot(Paths.get(tempResourceDirectory.toString(), "Roslynator"));
-        return Paths.get(getToolRoot().toString(), "bin", "Roslynator.exe");
+        return Paths.get(getToolRoot().toString(), "Roslynator", "Roslynator.exe");
     }
 }

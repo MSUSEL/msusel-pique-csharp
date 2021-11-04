@@ -8,6 +8,7 @@ import pique.model.*;
 import tool.RoslynatorAnalyzer;
 import utilities.PiqueProperties;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -26,6 +27,10 @@ import java.util.stream.Stream;
  * (3) Apply these results to the quality model to generate a fully derived quality model
  */
 public class QualityModelDeriver {
+
+    private static final File RESOURCES = new File("src/main/resources");
+    private static final Path ROSLYN_RESOURCE_ROOT = Paths.get(RESOURCES.toString(), "Roslynator");
+
     public static void main(String[] args) {
         new QualityModelDeriver();
     }
@@ -45,9 +50,9 @@ public class QualityModelDeriver {
         String projectRootFlag = "";
         Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
 
-        Path resources = Paths.get(prop.getProperty("blankqm.filepath")).getParent();
+        Path resources = Paths.get(prop.getProperty("project.root")).getParent();
 
-        ITool roslynatorAnalyzer = new RoslynatorAnalyzer(blankqmFilePath, resources);
+        ITool roslynatorAnalyzer = new RoslynatorAnalyzer(ROSLYN_RESOURCE_ROOT,  Paths.get(prop.getProperty("msbuild.bin")));
         Set<ITool> tools = Stream.of(roslynatorAnalyzer).collect(Collectors.toSet());
 
         QualityModelImport qmImport = new QualityModelImport(blankqmFilePath);

@@ -2,7 +2,7 @@
     "name": "CSharp Quality Model",
     "additionalData": {},
     "global_config": {
-    "benchmark_strategy": "pique.calibration.StandardDeviationBenchmarker",
+    "benchmark_strategy": "pique.calibration.MeanSDBenchmarker",
     "normalizer_strategy": "evaluation.Normalizer"
   },
     "factors": {

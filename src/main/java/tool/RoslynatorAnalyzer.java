@@ -101,7 +101,7 @@ public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
         // Strings for CLI call
         String roslynator = getExecutable().toAbsolutePath().toString();
         String command = "analyze";
-        String assemblyDir = "--analyzer-assemblies=" + getToolRoot().toAbsolutePath().toString()  + sep + "bin";
+        String assemblyDir = "--analyzer-assemblies=" + getToolRoot().toAbsolutePath().toString()  + sep + "Roslynator";
         String msBuild = "--msbuild-path=" + this.msBuild.toString();
         String output = "--output=" + tempResults.toString();
         String target = path.toString();
