@@ -6,6 +6,7 @@ import pique.calibration.IWeighter;
 import pique.calibration.WeightResult;
 import pique.model.*;
 import tool.RoslynatorAnalyzer;
+import tool.RoslynatorLoc;
 import utilities.PiqueProperties;
 
 import java.io.File;
@@ -28,8 +29,8 @@ import java.util.stream.Stream;
  */
 public class QualityModelDeriver {
 
-    private static final File RESOURCES = new File("src/main/resources");
-    private static final Path ROSLYN_RESOURCE_ROOT = Paths.get(RESOURCES.toString(), "Roslynator");
+    //private static final File RESOURCES = new File("src/main/resources");
+    //private static final Path ROSLYN_RESOURCE_ROOT = Paths.get(RESOURCES.toString(), "Roslynator");
 
     public static void main(String[] args) {
         new QualityModelDeriver();
@@ -47,13 +48,15 @@ public class QualityModelDeriver {
         Path derivedModelFilePath = Paths.get(prop.getProperty("results.directory"));
 
         // Initialize objects
-        String projectRootFlag = "target.flag";
+        String projectRootFlag = prop.getProperty("target.flag");
         Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
 
         Path resources = Paths.get(prop.getProperty("project.root")).getParent();
 
-        ITool roslynatorAnalyzer = new RoslynatorAnalyzer(ROSLYN_RESOURCE_ROOT,  Paths.get(prop.getProperty("msbuild.bin")));
-        Set<ITool> tools = Stream.of(roslynatorAnalyzer).collect(Collectors.toSet());
+        // run roslynator
+        ITool roslynatorLoc = new RoslynatorLoc(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
+        ITool roslynator = new RoslynatorAnalyzer(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
+        Set<ITool> tools = Stream.of(roslynatorLoc, roslynator).collect(Collectors.toSet());
 
         QualityModelImport qmImport = new QualityModelImport(blankqmFilePath);
         QualityModel qmDescription = qmImport.importQualityModel();
