@@ -47,7 +47,7 @@ public class QualityModelDeriver {
         Path derivedModelFilePath = Paths.get(prop.getProperty("results.directory"));
 
         // Initialize objects
-        String projectRootFlag = "";
+        String projectRootFlag = "target.flag";
         Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
 
         Path resources = Paths.get(prop.getProperty("project.root")).getParent();
