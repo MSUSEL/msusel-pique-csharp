@@ -1,11 +1,14 @@
 package tool;
-
 import com.sun.org.apache.xerces.internal.dom.DeferredElementImpl;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-
+import pique.analysis.ITool;
+import pique.evaluation.DefaultDiagnosticEvaluator;
+import pique.model.Diagnostic;
+import pique.model.Finding;
+import pique.utility.FileUtility;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -19,14 +22,6 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-
-import pique.evaluation.DefaultDiagnosticEvaluator;
-import pique.analysis.ITool;
-import pique.model.Diagnostic;
-import pique.model.Finding;
-import pique.utility.FileUtility;
-
-
 /**
  * ITool implementation static analysis tool class.
  *
@@ -39,11 +34,8 @@ import pique.utility.FileUtility;
  * The .exe should be kept in resources/tools.
  */
 public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
-
     // Fields
     private final Path msBuild;
-
-
     /**
      * Constructor.
      * Roslynator analysis needs the MSBuild.exe path
@@ -58,10 +50,6 @@ public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
         super("Roslynator", toolRoot);
         this.msBuild = msBuild;
     }
-
-
-
-
     // Methods
     /**
      * @param path
@@ -71,12 +59,10 @@ public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
      */
     @Override
     public Path analyze(Path path) {
-
         path = path.toAbsolutePath();
         String sep = File.separator;
         File tempResults = new File(System.getProperty("user.dir") +"/out/roslynator_output.xml");
         tempResults.getParentFile().mkdirs();
-
         // Append .sln or .csproj file to path
         // TODO: refactor to method and find better way that doesn't use stacked if statements.
         Set<String> targetFiles = FileUtility.findFileNamesFromExtension(path, ".sln", 1);
@@ -97,72 +83,60 @@ public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
                         "Ensure the directory has only one .csproj file to target.");
             }
         }
-
         // Strings for CLI call
         String roslynator = getExecutable().toAbsolutePath().toString();
         String command = "analyze";
-        String assemblyDir = "--analyzer-assemblies=" + getToolRoot().toAbsolutePath().toString()  + sep + "Roslynator";
+        //String assemblyDir = "--analyzer-assemblies=" + getToolRoot().toAbsolutePath().toString()  + sep + "Roslynator";
+        String assemblyDir = "--analyzer-assemblies=" + getToolRoot().toAbsolutePath().toString()  + sep + "bin";
         String msBuild = "--msbuild-path=" + this.msBuild.toString();
         String output = "--output=" + tempResults.toString();
         String target = path.toString();
-
         if (!System.getProperty("os.name").contains("Windows")) {
             throw new RuntimeException("Roslynator C# analysis not supported on non-Windows machines.");
         }
-
         // Run the tool
         System.out.println("roslynator: beginning static analysis.\n\tTarget: " + path.toString());
-
         Process p;
         try {
             p = new ProcessBuilder(roslynator, command, assemblyDir, msBuild, output, target).start();
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
             String line;
-
             while ((line = stdInput.readLine()) != null) {
                 System.out.println("roslynator: " + line);
             }
             p.waitFor();
         }
         catch (IOException | InterruptedException e) { e.printStackTrace(); }
-
         // Assert result file was created
         if (!tempResults.isFile()) {
             throw new RuntimeException("Roslynator.analyze() did not generate a results file in the expected location");
         }
-
         return tempResults.toPath();
     }
-
-
     @Override
-    public Map<String, pique.model.Diagnostic> parseAnalysis(Path path) {
-        System.out.println(this.getName() + " Parsing Analysis...");
+    public Map<String, Diagnostic> parseAnalysis(Path path) {
         Map<String, Diagnostic> diagnostics = new HashMap<>();
-
         // XML parsing (shamelessly borrowed from https://stackoverflow.com/questions/11720999/simplest-way-to-parse-this-xml-in-java)
         try {
             // load XML
             DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = domFactory.newDocumentBuilder();
             Document doc = builder.parse(path.toFile());
-
             // load XPath
             XPathFactory xPathfactory = XPathFactory.newInstance();
             XPath xpath = xPathfactory.newXPath();
             XPathExpression expr = xpath.compile("//Diagnostics/Diagnostic");
-
             // collect set of diagnostics
             NodeList diagnosticNodes = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
-
             for (int i = 0; i < diagnosticNodes.getLength(); i++) {  // create diagnostic objects
                 Node diagnosticElement = diagnosticNodes.item(i);
                 String diagnosticId = ((DeferredElementImpl) diagnosticElement).getAttributeNode("Id").getValue();
                 Diagnostic diagnostic = findMapMemberByDiagnosticId(diagnostics, diagnosticId);
                 NodeList diagnosticChildren = diagnosticElement.getChildNodes();
-
                 // attach findings
-                Finding finding = new Finding("",0,0, 0);
+                //TODO fix this default constructor workaround
+                //Finding finding = new Finding("", 0, 0, 0);
+                Finding finding = new Finding(null, -1, -1, 0);
                 for (int j = 0; j < diagnosticChildren.getLength(); j++) {
                     Node diagnosticChild = diagnosticChildren.item(j);
                     switch (diagnosticChild.getNodeName()) {
@@ -194,11 +168,9 @@ public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
                     }
                 }
                 diagnostic.setChild(finding);
-
                 // add parsed diagnostic with attached finding objects to collection
                 diagnostics.put(diagnosticId, diagnostic);
             }
-
         } catch (ParserConfigurationException e) {
             System.out.println("Bad parser configuration");
             e.printStackTrace();
@@ -212,27 +184,19 @@ public class RoslynatorAnalyzer extends RoslynatorTool implements ITool {
             System.out.println("Bad XPath Expression");
             e.printStackTrace();
         }
-
         return diagnostics;
     }
-
-
     // Helper methods
-
     private Diagnostic findMapMemberByDiagnosticId(Map<String, Diagnostic> diagnostics, String id) {
         if (diagnostics.containsKey(id)) { return diagnostics.get(id); }
         else { return new Diagnostic(id, "", "Roslynator", new DefaultDiagnosticEvaluator()); }
     }
-
-
     @Override
     public Path initialize(Path toolRoot) {
         return roslynatorInitializeToTempFolder();
     }
-
     @Override
     public String getName() {
         return "Roslynator";
     }
 }
-

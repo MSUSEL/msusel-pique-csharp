@@ -1,0 +1,21 @@
+Roslynator Command Line Tool version 0.1.0.3
+Copyright (c) Josef Pihrt. All rights reserved.
+
+Load solution 'E:\bench-csharp-combo\SparkleShare\SparkleShare.sln'
+Done loading solution 'E:\bench-csharp-combo\SparkleShare\SparkleShare.sln'
+Count lines for solution 'E:\bench-csharp-combo\SparkleShare\SparkleShare.sln'
+
+Lines of code by project:
+3,922 SparkleShare.Windows C#
+3,408 SparkleShare.Linux   C#
+2,005 Sparkles             C#
+1,162 Sparkles.Git         C#
+    0 SparkleShare.Mac     C#
+
+10,497  66% lines of code
+ 4,086  26% white-space lines
+ 1,272   8% comment lines
+    28   0% preprocessor directive lines
+15,883 100% total lines
+
+Done counting lines for solution 'E:\bench-csharp-combo\SparkleShare\SparkleShare.sln' in 00:00.42

@@ -1,23 +1,20 @@
 package tool;
-
 import pique.analysis.Tool;
 import pique.utility.FileUtility;
-
 import java.io.File;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-public abstract class  RoslynatorTool extends Tool  {
-
+/**
+ * Abstract class for common functions of Roslynator tool needs
+ */
+public abstract class RoslynatorTool extends Tool {
     public RoslynatorTool(String name, Path toolRoot) {
         super(name, toolRoot);
     }
-
     protected Path roslynatorInitializeToTempFolder() {
         String protocol = RoslynatorTool.class.getResource("").getProtocol();
         Path tempResourceDirectory = Paths.get(System.getProperty("user.dir"), "resources");
-
         switch (protocol) {
             case "file":
                 Path roslynatorResource = getToolRoot();
@@ -39,8 +36,8 @@ public abstract class  RoslynatorTool extends Tool  {
             default:
                 throw new RuntimeException("Protocol did not match with 'file' or 'jar'");
         }
-
         setToolRoot(Paths.get(tempResourceDirectory.toString(), "Roslynator"));
-        return Paths.get(getToolRoot().toString(), "Roslynator", "Roslynator.exe");
+        //return Paths.get(getToolRoot().toString(), "Roslynator", "Roslynator.exe");
+        return Paths.get(getToolRoot().toString(), "bin", "Roslynator.exe");
     }
 }
