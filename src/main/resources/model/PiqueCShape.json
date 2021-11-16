@@ -2,8 +2,8 @@
     "name": "CSharp Quality Model",
     "additionalData": {},
     "global_config": {
-    "benchmark_strategy": "calibration.BinaryBenchmarker",
-    "normalizer_strategy": "evaluation.NoNormalizer",
+    "benchmark_strategy": "pique.calibration.NaiveBenchmarker",
+    "normalizer_strategy": "pique.evaluator.DefaultNormalizer",
         "weights_strategy": "pique.calibration.NaiveWeighter"
   },
     "factors": {

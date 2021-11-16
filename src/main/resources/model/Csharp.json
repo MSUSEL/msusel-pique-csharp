@@ -1,0 +1,247 @@
+{
+  "name": "CSharp Quality Model",
+  "additionalData" : { },
+  "global_config" : {
+    "benchmark_strategy" : "pique.calibration.NaiveBenchmarker",
+    "normalizer" : "pique.evaluator.DefaultNormalizer",
+    "weights_strategy" : "pique.calibration.NaiveWeighter"
+  },
+  "factors": {
+    "tqi": {
+      "CSharp Total Software Quality": {
+        "description": "The total quality value representing the entire CSharp system",
+        "children": {
+          "Compatibility": {},
+          "Maintainability": {},
+          "Performance Efficiency": {},
+          "Portability": {},
+          "Reliability": {},
+          "Security": {},
+          "Usability": {}
+        }
+      }
+    },
+    "quality_aspects": {
+      "Compatibility": {
+        "description": "Degree to which a product, system or component can exchange information with other products, systems or components, and/or perform its required functions while sharing the same hardware or software environment"
+      },
+      "Maintainability": {
+        "description": "This characteristic represents the degree of effectiveness and efficiency with which a product or system can be modified to improve it, correct it or adapt it to changes in environment, and in requirements"
+      },
+      "Performance Efficiency": {
+        "description": "This characteristic represents the performance relative to the amount of resources used under stated conditions"
+      },
+      "Portability": {
+        "description": "Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another"
+      },
+      "Reliability": {
+        "description": "Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time"
+      },
+      "Security": {
+        "description": "Degree to which a product or system protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization"
+      },
+      "Usability": {
+        "description": "Degree to which a product or system can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use"
+      }
+    },
+    "product_factors": {
+      "Data Type Integrity": {
+        "description": "A  representation of how well each object adheres to CSharp object oriented typing expectations",
+        "children": {
+          "DTI Smells": {}
+        }
+      },
+      "Documentation": {
+        "description": "Information about the source code intended to assist human understanding",
+        "children": {
+          "Documentation Smells": {}
+        }
+      },
+      "Encryption": {
+        "description": "The concealment of code elements such that external entities are unable to decipher its information",
+        "children": {
+          "Encryption Smells": {}
+        }
+      },
+      "Exception Handling": {
+        "description": "Goodness of approach in handling exceptions in a compliant and productive way",
+        "children": {
+          "Exception Handling Smells": {}
+        }
+
+      },
+      "Functional Syntax": {
+        "description": "The operators, syntactic decision, object selection, etc., that determine how a functional act is defined. This is disjoint from the Format property by having potential impact on more than just human-readability",
+        "children": {
+          "Functional Syntax Smells": {}
+        }
+      },
+      "Format": {
+        "description": "Code formatting. This involves how the code is written as it appears to a human reader. Common synonyms include Style, Simplification, Readability, Convention, Verbosity, Naming",
+        "children": {
+          "Format Smells": {}
+        }
+      },
+      "IO Handling": {
+        "description": "Management of the data going into and out of a source component.  Can relate to data sanitization, filtering, rejection, querying, database queries and storage, etc",
+        "children": {
+          "IO Handling Smells": {}
+        }
+
+      },
+      "Resource Handling": {
+        "description": "Management of resources: often related to locking of instances and file IO",
+        "children": {
+          "Resource Handling Smells": {}
+        }
+
+      },
+      "Structure": {
+        "description": "The organization of classes, files, and methods. Includes object oriented concepts such as inheritance",
+        "children": {
+          "Structure Smells": {}
+        }
+      }
+  },
+    "measures": {
+      "DTI Smells": {
+        "description": "Code smells related to data type integrity",
+        "positive": false,
+        "children": {
+          "RCS1008": {},
+          "RCS1009": {},
+          "RCS1010": {},
+          "RCS1012": {},
+          "RCS1013": {},
+          "RCS1014": {},
+          "RCS1135": {},
+          "RCS1177": {},
+          "RCS1204": {},
+          "RCS1210": {},
+          "RCS1231": {},
+          "RCS1234": {}
+        }
+      },
+      "Documentation Smells" : {
+        "description": "Code smells related to documentation",
+        "positive": false,
+        "children": {
+          "RCS1138": {},
+          "RCS1139": {},
+          "RCS1140": {},
+          "RCS1141": {},
+          "RCS1142": {},
+          "RCS1181": {},
+          "RCS1232": {}
+        }
+      },
+      "Encryption Smells": {
+        "description": "Code smells related to Encryption",
+        "positive": false
+      },
+      "Exception Handling Smells": {
+        "description": "Code smells related to exception handling",
+        "positive": false
+      },
+      "Functional Syntax Smells": {
+        "description": "Code smells related to functional syntax",
+        "positive": false
+      },
+      "Format Smells": {
+        "description": "Code smells related to format",
+        "positive": false
+
+      },
+      "IO Handling Smells": {
+        "description": "Code smells related to IO handling",
+        "positive": false
+      },
+      "Resource Handling Smells": {
+        "description":"Code smells related to resource handling",
+        "positive": false
+      },
+      "Structure Smells": {
+        "description":"Code smells related to structure",
+        "positive": false
+      }
+  },
+    "diagnostics": {
+      "RCS1008": {
+        "description": "Use explicit type instead of 'var' (when the type is not obvious)",
+        "toolName": "Roslynator"
+      },
+      "RCS1009": {
+        "description": "Use explicit type instead of 'var' (foreach variable)",
+        "toolName": "Roslynator"
+      },
+      "RCS1010": {
+        "description": "Use 'var' instead of explicit type (when the type is obvious)",
+        "toolName": "Roslynator"
+      },
+      "RCS1012": {
+        "description": "Use explicit type instead of 'var' (when the type is obvious)",
+        "toolName": "Roslynator"
+      },
+      "RCS1013": {
+        "description": "Use predefined type",
+        "toolName": "Roslynator"
+      },
+      "RCS1014": {
+        "description": "Avoid implicitly-typed array",
+        "toolName": "Roslynator"
+      },
+      "RCS1135": {
+        "description": "Declare enum member with zero value (when enum has FlagsAttribute)",
+        "toolName": "Roslynator"
+      },
+      "RCS1177": {
+        "description": "Use 'var' instead of explicit type (in foreach)",
+        "toolName": "Roslynator"
+      },
+      "RCS1204": {
+        "description": "Use EventArgs.Empty",
+        "toolName": "Roslynator"
+      },
+      "RCS1210": {
+        "description": "Return Task.FromResult instead of returning null",
+        "toolName": "Roslynator"
+      },
+      "RCS1231": {
+        "description": "Make parameter ref read-only",
+        "toolName": "Roslynator"
+      },
+      "RCS1234": {
+        "description": "Duplicate enum value",
+        "toolName": "Roslynator"
+      },
+      "RCS1138": {
+        "description": "Add summary to documentation comment",
+        "toolName": "Roslynator"
+      },
+      "RCS1139": {
+        "description": "Add summary element to documentation comment",
+        "toolName": "Roslynator"
+      },
+      "RCS1140": {
+        "description": "Add exception to documentation comment",
+        "toolName": "Roslynator"
+      },
+      "RCS1141": {
+        "description": "Add 'param' element to documentation comment",
+        "toolName": "Roslynator"
+      },
+      "RCS1142": {
+        "description": "Add 'typeparam' element to documentation comment",
+        "toolName": "Roslynator"
+      },
+      "RCS1181": {
+        "description": "Convert comment to documentation comment",
+        "toolName": "Roslynator"
+      },
+      "RCS1232": {
+        "description": "Order elements in documentation comment",
+        "toolName": "Roslynator"
+      }
+    }
+  }
+}
