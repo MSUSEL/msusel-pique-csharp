@@ -102,146 +102,146 @@
           "Structure Smells": {}
         }
       }
+  }
   },
-    "measures": {
-      "DTI Smells": {
-        "description": "Code smells related to data type integrity",
-        "positive": false,
-        "children": {
-          "RCS1008": {},
-          "RCS1009": {},
-          "RCS1010": {},
-          "RCS1012": {},
-          "RCS1013": {},
-          "RCS1014": {},
-          "RCS1135": {},
-          "RCS1177": {},
-          "RCS1204": {},
-          "RCS1210": {},
-          "RCS1231": {},
-          "RCS1234": {}
-        }
-      },
-      "Documentation Smells" : {
-        "description": "Code smells related to documentation",
-        "positive": false,
-        "children": {
-          "RCS1138": {},
-          "RCS1139": {},
-          "RCS1140": {},
-          "RCS1141": {},
-          "RCS1142": {},
-          "RCS1181": {},
-          "RCS1232": {}
-        }
-      },
-      "Encryption Smells": {
-        "description": "Code smells related to Encryption",
-        "positive": false
-      },
-      "Exception Handling Smells": {
-        "description": "Code smells related to exception handling",
-        "positive": false
-      },
-      "Functional Syntax Smells": {
-        "description": "Code smells related to functional syntax",
-        "positive": false
-      },
-      "Format Smells": {
-        "description": "Code smells related to format",
-        "positive": false
+  "measures": {
+    "DTI Smells": {
+      "description": "Code smells related to data type integrity",
+      "positive": false,
+      "children": {
+        "RCS1008": {},
+        "RCS1009": {},
+        "RCS1010": {},
+        "RCS1012": {},
+        "RCS1013": {},
+        "RCS1014": {},
+        "RCS1135": {},
+        "RCS1177": {},
+        "RCS1204": {},
+        "RCS1210": {},
+        "RCS1231": {},
+        "RCS1234": {}
+      }
+    },
+    "Documentation Smells" : {
+      "description": "Code smells related to documentation",
+      "positive": false,
+      "children": {
+        "RCS1138": {},
+        "RCS1139": {},
+        "RCS1140": {},
+        "RCS1141": {},
+        "RCS1142": {},
+        "RCS1181": {},
+        "RCS1232": {}
+      }
+    },
+    "Encryption Smells": {
+      "description": "Code smells related to Encryption",
+      "positive": false
+    },
+    "Exception Handling Smells": {
+      "description": "Code smells related to exception handling",
+      "positive": false
+    },
+    "Functional Syntax Smells": {
+      "description": "Code smells related to functional syntax",
+      "positive": false
+    },
+    "Format Smells": {
+      "description": "Code smells related to format",
+      "positive": false
 
-      },
-      "IO Handling Smells": {
-        "description": "Code smells related to IO handling",
-        "positive": false
-      },
-      "Resource Handling Smells": {
-        "description":"Code smells related to resource handling",
-        "positive": false
-      },
-      "Structure Smells": {
-        "description":"Code smells related to structure",
-        "positive": false
-      }
+    },
+    "IO Handling Smells": {
+      "description": "Code smells related to IO handling",
+      "positive": false
+    },
+    "Resource Handling Smells": {
+      "description":"Code smells related to resource handling",
+      "positive": false
+    },
+    "Structure Smells": {
+      "description":"Code smells related to structure",
+      "positive": false
+    }
   },
-    "diagnostics": {
-      "RCS1008": {
-        "description": "Use explicit type instead of 'var' (when the type is not obvious)",
-        "toolName": "Roslynator"
-      },
-      "RCS1009": {
-        "description": "Use explicit type instead of 'var' (foreach variable)",
-        "toolName": "Roslynator"
-      },
-      "RCS1010": {
-        "description": "Use 'var' instead of explicit type (when the type is obvious)",
-        "toolName": "Roslynator"
-      },
-      "RCS1012": {
-        "description": "Use explicit type instead of 'var' (when the type is obvious)",
-        "toolName": "Roslynator"
-      },
-      "RCS1013": {
-        "description": "Use predefined type",
-        "toolName": "Roslynator"
-      },
-      "RCS1014": {
-        "description": "Avoid implicitly-typed array",
-        "toolName": "Roslynator"
-      },
-      "RCS1135": {
-        "description": "Declare enum member with zero value (when enum has FlagsAttribute)",
-        "toolName": "Roslynator"
-      },
-      "RCS1177": {
-        "description": "Use 'var' instead of explicit type (in foreach)",
-        "toolName": "Roslynator"
-      },
-      "RCS1204": {
-        "description": "Use EventArgs.Empty",
-        "toolName": "Roslynator"
-      },
-      "RCS1210": {
-        "description": "Return Task.FromResult instead of returning null",
-        "toolName": "Roslynator"
-      },
-      "RCS1231": {
-        "description": "Make parameter ref read-only",
-        "toolName": "Roslynator"
-      },
-      "RCS1234": {
-        "description": "Duplicate enum value",
-        "toolName": "Roslynator"
-      },
-      "RCS1138": {
-        "description": "Add summary to documentation comment",
-        "toolName": "Roslynator"
-      },
-      "RCS1139": {
-        "description": "Add summary element to documentation comment",
-        "toolName": "Roslynator"
-      },
-      "RCS1140": {
-        "description": "Add exception to documentation comment",
-        "toolName": "Roslynator"
-      },
-      "RCS1141": {
-        "description": "Add 'param' element to documentation comment",
-        "toolName": "Roslynator"
-      },
-      "RCS1142": {
-        "description": "Add 'typeparam' element to documentation comment",
-        "toolName": "Roslynator"
-      },
-      "RCS1181": {
-        "description": "Convert comment to documentation comment",
-        "toolName": "Roslynator"
-      },
-      "RCS1232": {
-        "description": "Order elements in documentation comment",
-        "toolName": "Roslynator"
-      }
+  "diagnostics": {
+    "RCS1008": {
+      "description": "Use explicit type instead of 'var' (when the type is not obvious)",
+      "toolName": "Roslynator"
+    },
+    "RCS1009": {
+      "description": "Use explicit type instead of 'var' (foreach variable)",
+      "toolName": "Roslynator"
+    },
+    "RCS1010": {
+      "description": "Use 'var' instead of explicit type (when the type is obvious)",
+      "toolName": "Roslynator"
+    },
+    "RCS1012": {
+      "description": "Use explicit type instead of 'var' (when the type is obvious)",
+      "toolName": "Roslynator"
+    },
+    "RCS1013": {
+      "description": "Use predefined type",
+      "toolName": "Roslynator"
+    },
+    "RCS1014": {
+      "description": "Avoid implicitly-typed array",
+      "toolName": "Roslynator"
+    },
+    "RCS1135": {
+      "description": "Declare enum member with zero value (when enum has FlagsAttribute)",
+      "toolName": "Roslynator"
+    },
+    "RCS1177": {
+      "description": "Use 'var' instead of explicit type (in foreach)",
+      "toolName": "Roslynator"
+    },
+    "RCS1204": {
+      "description": "Use EventArgs.Empty",
+      "toolName": "Roslynator"
+    },
+    "RCS1210": {
+      "description": "Return Task.FromResult instead of returning null",
+      "toolName": "Roslynator"
+    },
+    "RCS1231": {
+      "description": "Make parameter ref read-only",
+      "toolName": "Roslynator"
+    },
+    "RCS1234": {
+      "description": "Duplicate enum value",
+      "toolName": "Roslynator"
+    },
+    "RCS1138": {
+      "description": "Add summary to documentation comment",
+      "toolName": "Roslynator"
+    },
+    "RCS1139": {
+      "description": "Add summary element to documentation comment",
+      "toolName": "Roslynator"
+    },
+    "RCS1140": {
+      "description": "Add exception to documentation comment",
+      "toolName": "Roslynator"
+    },
+    "RCS1141": {
+      "description": "Add 'param' element to documentation comment",
+      "toolName": "Roslynator"
+    },
+    "RCS1142": {
+      "description": "Add 'typeparam' element to documentation comment",
+      "toolName": "Roslynator"
+    },
+    "RCS1181": {
+      "description": "Convert comment to documentation comment",
+      "toolName": "Roslynator"
+    },
+    "RCS1232": {
+      "description": "Order elements in documentation comment",
+      "toolName": "Roslynator"
     }
   }
 }

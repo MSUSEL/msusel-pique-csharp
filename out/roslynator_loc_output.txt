@@ -1,91 +1,14 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load solution 'E:\bench-csharp-combo\temp\SparkleShare - Copy\SparkleShare.sln'
-Done loading solution 'E:\bench-csharp-combo\temp\SparkleShare - Copy\SparkleShare.sln'
-Count lines for solution 'E:\bench-csharp-combo\temp\SparkleShare - Copy\SparkleShare.sln'
-System.AggregateException: One or more errors occurred. ---> System.AggregateException: One or more errors occurred. ---> System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)
-   --- End of inner exception stack trace ---
-   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
-   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
-   at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.CountLinesInParallel(IEnumerable`1 projects, LinesOfCodeKind kind, CodeMetricsOptions options, CancellationToken cancellationToken)
-   at Roslynator.CommandLine.PhysicalLinesOfCodeCommand.CountLines(Solution solution, CodeMetricsOptions options, CancellationToken cancellationToken)
-   at Roslynator.CommandLine.PhysicalLinesOfCodeCommand.<ExecuteAsync>d__4.MoveNext()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Roslynator.CommandLine.MSBuildWorkspaceCommand.<ExecuteAsync>d__7.MoveNext()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Roslynator.CommandLine.Program.<PhysicalLinesOfCodeAsync>d__9.MoveNext()
-   --- End of inner exception stack trace ---
-   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
-   at Roslynator.CommandLine.Program.Main(String[] args)
----> (Inner Exception #0) System.AggregateException: One or more errors occurred. ---> System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)
-   --- End of inner exception stack trace ---
-   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
-   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
-   at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.CountLinesInParallel(IEnumerable`1 projects, LinesOfCodeKind kind, CodeMetricsOptions options, CancellationToken cancellationToken)
-   at Roslynator.CommandLine.PhysicalLinesOfCodeCommand.CountLines(Solution solution, CodeMetricsOptions options, CancellationToken cancellationToken)
-   at Roslynator.CommandLine.PhysicalLinesOfCodeCommand.<ExecuteAsync>d__4.MoveNext()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Roslynator.CommandLine.MSBuildWorkspaceCommand.<ExecuteAsync>d__7.MoveNext()
---- End of stack trace from previous location where exception was thrown ---
-   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Roslynator.CommandLine.Program.<PhysicalLinesOfCodeAsync>d__9.MoveNext()
----> (Inner Exception #0) System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)<---
+Load project 'C:\Users\xuyin\Documents\esms\ESMS.Reports.PowerBI\ESMS.Reports.PowerBI.csproj'
+Done loading project 'C:\Users\xuyin\Documents\esms\ESMS.Reports.PowerBI\ESMS.Reports.PowerBI.csproj'
+Count lines for 'ESMS.Reports.PowerBI'
 
----> (Inner Exception #1) System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)<---
+0  NaN lines of code
+0  NaN white-space lines
+0  NaN comment lines
+0  NaN preprocessor directive lines
+0  NaN total lines
 
----> (Inner Exception #2) System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)<---
-
----> (Inner Exception #3) System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)<---
-
----> (Inner Exception #4) System.NotSupportedException: The language 'C#' is not supported.
-   at Roslynator.Host.Mef.MefWorkspaceServices.GetLanguageServices(String languageName)
-   at Roslynator.CommandLine.AbstractLinesOfCodeCommand.<>c__DisplayClass1_0.<CountLinesInParallel>b__0(Project project)
-   at System.Threading.Tasks.Parallel.<>c__DisplayClass42_0`2.<PartitionerForEachWorker>b__1()
-   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
-   at System.Threading.Tasks.Task.<>c__DisplayClass176_0.<ExecuteSelfReplicating>b__0(Object <p0>)<---
-<---
-
+Done counting lines for 'C:\Users\xuyin\Documents\esms\ESMS.Reports.PowerBI\ESMS.Reports.PowerBI.csproj' in 00:00.00

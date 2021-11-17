@@ -40,15 +40,17 @@ public class SingleProjectEvaluator {
         Path resultsDir = Paths.get(prop.getProperty("results.directory"));
 
         // Initialize objects
-        String projectRootFlag = ".txt";
+        String projectRootFlag = prop.getProperty("target.flag");
         Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
 
         Path qmLocation = Paths.get(prop.getProperty("derived.qm"));
         Path resources = Paths.get(prop.getProperty("blankqm.filepath"));
         resources = resources.toAbsolutePath().getParent();
 
-        ITool roslynatorLoc= new RoslynatorLoc(blankqmFilePath, resources);
-        Set<ITool> tools = Stream.of(roslynatorLoc).collect(Collectors.toSet());
+
+        ITool roslynatorLoc = new RoslynatorLoc(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
+        ITool roslynator = new RoslynatorAnalyzer(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
+        Set<ITool> tools = Stream.of(roslynatorLoc, roslynator).collect(Collectors.toSet());
         Path outputPath = runEvaluator(projectRoot, resultsDir, qmLocation, tools);
         System.out.println("output: " + outputPath.getFileName());
 
