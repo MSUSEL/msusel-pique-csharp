@@ -1,14 +1,14 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load project 'E:\ESMS Repos\ESMS.Outcome.Simulations.Api.Contracts\ESMS.Outcome.Simulations.Api.Contracts.csproj'
-Done loading project 'E:\ESMS Repos\ESMS.Outcome.Simulations.Api.Contracts\ESMS.Outcome.Simulations.Api.Contracts.csproj'
-Count lines for 'ESMS.Outcome.Simulations.Api.Contracts'
+Load project 'E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj'
+Done loading project 'E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj'
+Count lines for 'ESMS.Outcome.Clients.GraphDbGenerator'
 
-23  50% lines of code
- 6  13% white-space lines
-17  37% comment lines
- 0   0% preprocessor directive lines
-46 100% total lines
+ 98  71% lines of code
+ 13   9% white-space lines
+ 28  20% comment lines
+  0   0% preprocessor directive lines
+139 100% total lines
 
-Done counting lines for 'E:\ESMS Repos\ESMS.Outcome.Simulations.Api.Contracts\ESMS.Outcome.Simulations.Api.Contracts.csproj' in 00:00.20
+Done counting lines for 'E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj' in 00:00.27

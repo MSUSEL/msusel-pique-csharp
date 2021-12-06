@@ -292,7 +292,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -326,7 +326,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -360,7 +360,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -382,7 +382,7 @@
         "RCS1232": 0.1428571428571428571428571
       },
       "thresholds": [
-        2,
+        0,
         8
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -416,7 +416,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -477,7 +477,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -511,7 +511,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -545,7 +545,7 @@
         "RCS1013": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
+        0,
         12
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
@@ -727,7 +727,7 @@
     "RCS1232": {
       "toolName": "Roslynator",
       "name": "RCS1232",
-      "value": 2.0,
+      "value": 0.0,
       "description": "Order elements in documentation comment",
       "weights": {},
       "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",

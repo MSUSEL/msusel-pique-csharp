@@ -1,0 +1,748 @@
+{
+  "name": "CSharp Quality Model",
+  "additionalData": {
+    "projectName": "ESMS.Outcome.Clients.WPF"
+  },
+  "global_config": {
+    "benchmark_strategy": "pique.calibration.NaiveBenchmarker",
+    "weights_strategy": "pique.calibration.NaiveWeighter"
+  },
+  "factors": {
+    "product_factors": {
+      "Functional Syntax": {
+        "name": "Functional Syntax",
+        "value": 1.0,
+        "description": "The operators, syntactic decision, object selection, etc., that determine how a functional act is defined. This is disjoint from the Format property by having potential impact on more than just human-readability",
+        "weights": {
+          "Functional Syntax Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Format": {
+        "name": "Format",
+        "value": 1.0,
+        "description": "Code formatting. This involves how the code is written as it appears to a human reader. Common synonyms include Style, Simplification, Readability, Convention, Verbosity, Naming",
+        "weights": {
+          "Format Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Resource Handling": {
+        "name": "Resource Handling",
+        "value": 1.0,
+        "description": "Management of resources: often related to locking of instances and file IO",
+        "weights": {
+          "Resource Handling Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Data Type Integrity": {
+        "name": "Data Type Integrity",
+        "value": 1.0,
+        "description": "A  representation of how well each object adheres to CSharp object oriented typing expectations",
+        "weights": {
+          "DTI Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Documentation": {
+        "name": "Documentation",
+        "value": 1.0,
+        "description": "Information about the source code intended to assist human understanding",
+        "weights": {
+          "Documentation Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "IO Handling": {
+        "name": "IO Handling",
+        "value": 1.0,
+        "description": "Management of the data going into and out of a source component.  Can relate to data sanitization, filtering, rejection, querying, database queries and storage, etc",
+        "weights": {
+          "IO Handling Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Exception Handling": {
+        "name": "Exception Handling",
+        "value": 1.0,
+        "description": "Goodness of approach in handling exceptions in a compliant and productive way",
+        "weights": {
+          "Exception Handling Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Encryption": {
+        "name": "Encryption",
+        "value": 1.0,
+        "description": "The concealment of code elements such that external entities are unable to decipher its information",
+        "weights": {
+          "Encryption Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Structure": {
+        "name": "Structure",
+        "value": 1.0,
+        "description": "The organization of classes, files, and methods. Includes object oriented concepts such as inheritance",
+        "weights": {
+          "Structure Smells": 1.0
+        },
+        "eval_strategy": "pique.evaluation.DefaultProductFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      }
+    },
+    "quality_aspects": {
+      "Performance Efficiency": {
+        "name": "Performance Efficiency",
+        "value": 0.9999999999999999999999999,
+        "description": "This characteristic represents the performance relative to the amount of resources used under stated conditions",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Portability": {
+        "name": "Portability",
+        "value": 0.9999999999999999999999999,
+        "description": "Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Maintainability": {
+        "name": "Maintainability",
+        "value": 0.9999999999999999999999999,
+        "description": "This characteristic represents the degree of effectiveness and efficiency with which a product or system can be modified to improve it, correct it or adapt it to changes in environment, and in requirements",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Compatibility": {
+        "name": "Compatibility",
+        "value": 0.9999999999999999999999999,
+        "description": "Degree to which a product, system or component can exchange information with other products, systems or components, and/or perform its required functions while sharing the same hardware or software environment",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Reliability": {
+        "name": "Reliability",
+        "value": 0.9999999999999999999999999,
+        "description": "Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Security": {
+        "name": "Security",
+        "value": 0.9999999999999999999999999,
+        "description": "Degree to which a product or system protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      },
+      "Usability": {
+        "name": "Usability",
+        "value": 0.9999999999999999999999999,
+        "description": "Degree to which a product or system can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use",
+        "weights": {
+          "Functional Syntax": 0.1111111111111111111111111,
+          "Format": 0.1111111111111111111111111,
+          "Resource Handling": 0.1111111111111111111111111,
+          "Data Type Integrity": 0.1111111111111111111111111,
+          "Documentation": 0.1111111111111111111111111,
+          "IO Handling": 0.1111111111111111111111111,
+          "Exception Handling": 0.1111111111111111111111111,
+          "Encryption": 0.1111111111111111111111111,
+          "Structure": 0.1111111111111111111111111
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      }
+    },
+    "tqi": {
+      "CSharp Total Software Quality": {
+        "name": "CSharp Total Software Quality",
+        "value": 0.9999999999999999999999997,
+        "description": "The total quality value representing the entire CSharp system",
+        "weights": {
+          "Performance Efficiency": 0.1428571428571428571428571,
+          "Portability": 0.1428571428571428571428571,
+          "Maintainability": 0.1428571428571428571428571,
+          "Compatibility": 0.1428571428571428571428571,
+          "Reliability": 0.1428571428571428571428571,
+          "Security": 0.1428571428571428571428571,
+          "Usability": 0.1428571428571428571428571
+        },
+        "eval_strategy": "pique.evaluation.DefaultFactorEvaluator",
+        "normalizer": "pique.evaluation.DefaultNormalizer",
+        "utility_function": "pique.evaluation.DefaultUtility"
+      }
+    }
+  },
+  "measures": {
+    "Exception Handling Smells": {
+      "positive": false,
+      "name": "Exception Handling Smells",
+      "value": 1.0,
+      "description": "Code smells related to exception handling",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "Functional Syntax Smells": {
+      "positive": false,
+      "name": "Functional Syntax Smells",
+      "value": 1.0,
+      "description": "Code smells related to functional syntax",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "Encryption Smells": {
+      "positive": false,
+      "name": "Encryption Smells",
+      "value": 1.0,
+      "description": "Code smells related to Encryption",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "Documentation Smells": {
+      "positive": false,
+      "name": "Documentation Smells",
+      "value": 1.0,
+      "description": "Code smells related to documentation",
+      "weights": {
+        "RCS1140": 0.1428571428571428571428571,
+        "RCS1141": 0.1428571428571428571428571,
+        "RCS1139": 0.1428571428571428571428571,
+        "RCS1181": 0.1428571428571428571428571,
+        "RCS1138": 0.1428571428571428571428571,
+        "RCS1142": 0.1428571428571428571428571,
+        "RCS1232": 0.1428571428571428571428571
+      },
+      "thresholds": [
+        0,
+        8
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "Format Smells": {
+      "positive": false,
+      "name": "Format Smells",
+      "value": 1.0,
+      "description": "Code smells related to format",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "DTI Smells": {
+      "positive": false,
+      "name": "DTI Smells",
+      "value": 1.0,
+      "description": "Code smells related to data type integrity",
+      "weights": {
+        "RCS1008": 0.08333333333333333333333333,
+        "RCS1009": 0.08333333333333333333333333,
+        "RCS1014": 0.08333333333333333333333333,
+        "RCS1135": 0.08333333333333333333333333,
+        "RCS1234": 0.08333333333333333333333333,
+        "RCS1204": 0.08333333333333333333333333,
+        "RCS1010": 0.08333333333333333333333333,
+        "RCS1231": 0.08333333333333333333333333,
+        "RCS1012": 0.08333333333333333333333333,
+        "RCS1177": 0.08333333333333333333333333,
+        "RCS1210": 0.08333333333333333333333333,
+        "RCS1013": 0.08333333333333333333333333
+      },
+      "thresholds": [
+        0,
+        4
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "Resource Handling Smells": {
+      "positive": false,
+      "name": "Resource Handling Smells",
+      "value": 1.0,
+      "description": "Code smells related to resource handling",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "IO Handling Smells": {
+      "positive": false,
+      "name": "IO Handling Smells",
+      "value": 1.0,
+      "description": "Code smells related to IO handling",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "Structure Smells": {
+      "positive": false,
+      "name": "Structure Smells",
+      "value": 1.0,
+      "description": "Code smells related to structure",
+      "weights": {
+        "RCS1140": 0.05263157894736842105263158,
+        "RCS1141": 0.05263157894736842105263158,
+        "RCS1181": 0.05263157894736842105263158,
+        "RCS1139": 0.05263157894736842105263158,
+        "RCS1008": 0.05263157894736842105263158,
+        "RCS1009": 0.05263157894736842105263158,
+        "RCS1014": 0.05263157894736842105263158,
+        "RCS1135": 0.05263157894736842105263158,
+        "RCS1234": 0.05263157894736842105263158,
+        "RCS1204": 0.05263157894736842105263158,
+        "RCS1138": 0.05263157894736842105263158,
+        "RCS1010": 0.05263157894736842105263158,
+        "RCS1142": 0.05263157894736842105263158,
+        "RCS1231": 0.05263157894736842105263158,
+        "RCS1012": 0.05263157894736842105263158,
+        "RCS1177": 0.05263157894736842105263158,
+        "RCS1210": 0.05263157894736842105263158,
+        "RCS1232": 0.05263157894736842105263158,
+        "RCS1013": 0.05263157894736842105263158
+      },
+      "thresholds": [
+        0,
+        12
+      ],
+      "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    }
+  },
+  "diagnostics": {
+    "RCS1140": {
+      "toolName": "Roslynator",
+      "name": "RCS1140",
+      "value": 0.0,
+      "description": "Add exception to documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1141": {
+      "toolName": "Roslynator",
+      "name": "RCS1141",
+      "value": 0.0,
+      "description": "Add 'param' element to documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1181": {
+      "toolName": "Roslynator",
+      "name": "RCS1181",
+      "value": 0.0,
+      "description": "Convert comment to documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1139": {
+      "toolName": "Roslynator",
+      "name": "RCS1139",
+      "value": 0.0,
+      "description": "Add summary element to documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1008": {
+      "toolName": "Roslynator",
+      "name": "RCS1008",
+      "value": 0.0,
+      "description": "Use explicit type instead of 'var' (when the type is not obvious)",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1009": {
+      "toolName": "Roslynator",
+      "name": "RCS1009",
+      "value": 0.0,
+      "description": "Use explicit type instead of 'var' (foreach variable)",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1014": {
+      "toolName": "Roslynator",
+      "name": "RCS1014",
+      "value": 0.0,
+      "description": "Avoid implicitly-typed array",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1135": {
+      "toolName": "Roslynator",
+      "name": "RCS1135",
+      "value": 0.0,
+      "description": "Declare enum member with zero value (when enum has FlagsAttribute)",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1234": {
+      "toolName": "Roslynator",
+      "name": "RCS1234",
+      "value": 0.0,
+      "description": "Duplicate enum value",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1204": {
+      "toolName": "Roslynator",
+      "name": "RCS1204",
+      "value": 0.0,
+      "description": "Use EventArgs.Empty",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1138": {
+      "toolName": "Roslynator",
+      "name": "RCS1138",
+      "value": 0.0,
+      "description": "Add summary to documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1010": {
+      "toolName": "Roslynator",
+      "name": "RCS1010",
+      "value": 0.0,
+      "description": "Use 'var' instead of explicit type (when the type is obvious)",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1142": {
+      "toolName": "Roslynator",
+      "name": "RCS1142",
+      "value": 0.0,
+      "description": "Add 'typeparam' element to documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1231": {
+      "toolName": "Roslynator",
+      "name": "RCS1231",
+      "value": 0.0,
+      "description": "Make parameter ref read-only",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1012": {
+      "toolName": "Roslynator",
+      "name": "RCS1012",
+      "value": 0.0,
+      "description": "Use explicit type instead of 'var' (when the type is obvious)",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1177": {
+      "toolName": "Roslynator",
+      "name": "RCS1177",
+      "value": 0.0,
+      "description": "Use 'var' instead of explicit type (in foreach)",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1210": {
+      "toolName": "Roslynator",
+      "name": "RCS1210",
+      "value": 0.0,
+      "description": "Return Task.FromResult instead of returning null",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1232": {
+      "toolName": "Roslynator",
+      "name": "RCS1232",
+      "value": 0.0,
+      "description": "Order elements in documentation comment",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    },
+    "RCS1013": {
+      "toolName": "Roslynator",
+      "name": "RCS1013",
+      "value": 0.0,
+      "description": "Use predefined type",
+      "weights": {},
+      "eval_strategy": "pique.evaluation.DefaultDiagnosticEvaluator",
+      "normalizer": "pique.evaluation.DefaultNormalizer",
+      "utility_function": "pique.evaluation.DefaultUtility"
+    }
+  }
+}
