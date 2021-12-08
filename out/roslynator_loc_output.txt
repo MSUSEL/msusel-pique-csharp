@@ -1,14 +1,20 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load project 'E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj'
-Done loading project 'E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj'
-Count lines for 'ESMS.Outcome.Clients.GraphDbGenerator'
+Load solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\mRemoteNG\mRemoteV1.sln'
+Done loading solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\mRemoteNG\mRemoteV1.sln'
+Count lines for solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\mRemoteNG\mRemoteV1.sln'
 
- 98  71% lines of code
- 13   9% white-space lines
- 28  20% comment lines
-  0   0% preprocessor directive lines
-139 100% total lines
+Lines of code by project:
+39,030 mRemoteV1       C#
+ 8,867 mRemoteNGTests  C#
+   176 mRemoteNG.Specs C#
+     0 CustomActions   C#
 
-Done counting lines for 'E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj' in 00:00.27
+48,073  82% lines of code
+ 7,513  13% white-space lines
+ 2,600   4% comment lines
+   630   1% preprocessor directive lines
+58,816 100% total lines
+
+Done counting lines for solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\mRemoteNG\mRemoteV1.sln' in 00:00.75
