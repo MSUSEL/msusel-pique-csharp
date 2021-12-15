@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This copy of Woodstox XML processor is licensed under the
+    Apache (Software) License, version 2.0 ("the License").
+    See the License for details about distribution rights, and the
+    specific rights regarding derivate works.
+
+    You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/
+
+    A copy is also included in the downloadable source code package
+    containing Woodstox, in file "ASL2.0", under the same directory
+    as this file.
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -13,7 +29,7 @@
     <artifactId>msusel-pique-csharp</artifactId>
     <version>0.0.1</version>
     <name>msusel-pique-csharp</name>
-    <description>MSU PIQUE quality model implementation for binaries</description>
+    <description>MSU PIQUE quality model implementation for csharp</description>
 
 
     <build>
@@ -30,7 +46,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>piquecsharp.runnable.SingleProjectEvaluator</mainClass>
+                            <mainClass>piquecsharp.runnable.Wrapper</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

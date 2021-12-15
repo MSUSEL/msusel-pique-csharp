@@ -2,5 +2,6 @@ tool\RoslynatorLoc.class
 piquecsharp\runnable\QualityModelDeriver.class
 tool\RoslynatorTool.class
 utilities\PiqueProperties.class
+piquecsharp\runnable\Wrapper.class
 piquecsharp\runnable\SingleProjectEvaluator.class
 tool\RoslynatorAnalyzer.class

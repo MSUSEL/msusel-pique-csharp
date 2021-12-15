@@ -1,5 +1,21 @@
+/**
+ * This copy of Woodstox XML processor is licensed under the
+ * Apache (Software) License, version 2.0 ("the License").
+ * See the License for details about distribution rights, and the
+ * specific rights regarding derivate works.
+ *
+ * You may obtain a copy of the License at:
+ *
+ * http://www.apache.org/licenses/
+ *
+ * A copy is also included in the downloadable source code package
+ * containing Woodstox, in file "ASL2.0", under the same directory
+ * as this file.
+ */
 package piquecsharp.runnable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pique.analysis.ITool;
 import pique.evaluation.Project;
 import pique.model.Diagnostic;
@@ -7,8 +23,9 @@ import pique.model.QualityModel;
 import pique.model.QualityModelImport;
 import tool.RoslynatorAnalyzer;
 import tool.RoslynatorLoc;
-import utilities.PiqueProperties;
+import pique.utility.PiqueProperties;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -25,36 +42,59 @@ import java.util.stream.Stream;
 // TODO (1.0): turn into static methods (maybe unless logger problems)
 public class SingleProjectEvaluator {
 
-    public static void main(String[] args){
-        new SingleProjectEvaluator();
-    }
+    private static final Logger LOGGER = LoggerFactory.getLogger(SingleProjectEvaluator.class);
 
     private Project project;
 
     // constructor
-    public SingleProjectEvaluator(){
-        Properties prop = PiqueProperties.getProperties();
-
-        Path projectRoot = Paths.get(prop.getProperty("project.root"));
-        Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
-        Path resultsDir = Paths.get(prop.getProperty("results.directory"));
-
-        // Initialize objects
-        String projectRootFlag = prop.getProperty("target.flag");
-        Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
-
-        Path qmLocation = Paths.get(prop.getProperty("derived.qm"));
-        Path resources = Paths.get(prop.getProperty("blankqm.filepath"));
-        resources = resources.toAbsolutePath().getParent();
-
-
-        ITool roslynatorLoc = new RoslynatorLoc(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
-        ITool roslynator = new RoslynatorAnalyzer(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
-        Set<ITool> tools = Stream.of(roslynatorLoc, roslynator).collect(Collectors.toSet());
-        Path outputPath = runEvaluator(projectRoot, resultsDir, qmLocation, tools);
-        System.out.println("output: " + outputPath.getFileName());
-
+    public SingleProjectEvaluator(String propertiesPath){
+        init(propertiesPath);
     }
+
+    public SingleProjectEvaluator(){
+        init(null);
+    }
+
+
+   public void init (String propertiesPath) {
+       LOGGER.info("Starting Analysis");
+
+       Properties prop = null;
+       try {
+           System.out.println("Finind it");
+           prop = propertiesPath==null ? PiqueProperties.getProperties() : PiqueProperties.getProperties(propertiesPath);
+           System.out.println("Found it");
+       } catch (IOException e) {
+           // TODO Auto-generated catch block
+           e.printStackTrace();
+       }
+
+       System.out.println("I am project root");
+       Path projectRoot = Paths.get(prop.getProperty("project.root"));
+       Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
+       Path resultsDir = Paths.get(prop.getProperty("results.directory"));
+
+       LOGGER.info("Project to analyze: " + projectRoot.toString());
+
+       // Initialize objects
+       String projectRootFlag = prop.getProperty("target.flag");
+       Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
+
+       Path qmLocation = Paths.get(prop.getProperty("derived.qm"));
+       Path resources = Paths.get(prop.getProperty("blankqm.filepath"));
+       resources = resources.toAbsolutePath().getParent();
+
+
+       ITool roslynatorLoc = new RoslynatorLoc(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
+       ITool roslynator = new RoslynatorAnalyzer(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
+       Set<ITool> tools = Stream.of(roslynatorLoc, roslynator).collect(Collectors.toSet());
+       Path outputPath = runEvaluator(projectRoot, resultsDir, qmLocation, tools);
+       System.out.println("output: " + outputPath.getFileName());
+   }
+
+
+
+
     //region Get / Set
     public Project getEvaluatedProject() {
         return project;
