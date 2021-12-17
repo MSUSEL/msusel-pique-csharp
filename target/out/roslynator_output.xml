@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roslynator>
+  <CodeAnalysis>
+    <Summary>
+      <Diagnostic Id="RCS1018" Title="Add default access modifier." Count="4" />
+      <Diagnostic Id="RCS1102" Title="Make class static." Count="1" />
+      <Diagnostic Id="RCS1163" Title="Unused parameter." Count="1" />
+      <Diagnostic Id="RCS1226" Title="Add paragraph to documentation comment." Count="1" />
+    </Summary>
+    <Projects>
+      <Project Name="ESMS.Outcome.Clients.GraphDbGenerator" FilePath="C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj">
+        <Diagnostics>
+          <Diagnostic Id="RCS1018">
+            <Severity>Info</Severity>
+            <Message>Add default access modifier.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ElementNeo4jExtractor.cs</FilePath>
+            <Location Line="11" Character="9" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1018">
+            <Severity>Info</Severity>
+            <Message>Add default access modifier.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
+            <Location Line="10" Character="9" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1226">
+            <Severity>Info</Severity>
+            <Message>Add paragraph to documentation comment.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
+            <Location Line="3" Character="6" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1018">
+            <Severity>Info</Severity>
+            <Message>Add default access modifier.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <Location Line="12" Character="11" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1018">
+            <Severity>Info</Severity>
+            <Message>Add default access modifier.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <Location Line="14" Character="21" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1102">
+            <Severity>Warning</Severity>
+            <Message>Make class static.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <Location Line="12" Character="11" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1163">
+            <Severity>Info</Severity>
+            <Message>Unused parameter 'args'.</Message>
+            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <Location Line="14" Character="26" />
+          </Diagnostic>
+        </Diagnostics>
+      </Project>
+    </Projects>
+  </CodeAnalysis>
+</Roslynator>
