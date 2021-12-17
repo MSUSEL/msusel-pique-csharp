@@ -1,21 +1,18 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\choco\chocolatey.sln'
-Done loading solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\choco\chocolatey.sln'
-Count lines for solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\choco\chocolatey.sln'
+Load solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\v2rayN\v2rayN.sln'
+Done loading solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\v2rayN\v2rayN.sln'
+Count lines for solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\v2rayN\v2rayN.sln'
 
 Lines of code by project:
-21,395 chocolatey                   C#
- 8,073 chocolatey.tests.integration C#
- 8,009 chocolatey.tests             C#
-   207 chocolatey.console           C#
-    11 chocolatey.resources         C#
+10,318 v2rayN       C#
+   161 v2rayUpgrade C#
 
-37,695  72% lines of code
- 6,713  13% white-space lines
- 7,943  15% comment lines
-    77   0% preprocessor directive lines
-52,428 100% total lines
+10,479  76% lines of code
+ 1,531  11% white-space lines
+ 1,747  13% comment lines
+   100   1% preprocessor directive lines
+13,857 100% total lines
 
-Done counting lines for solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\choco\chocolatey.sln' in 00:01.39
+Done counting lines for solution 'C:\Users\xuyin\Documents\CSHARP-DEMO\Useable\v2rayN\v2rayN.sln' in 00:00.47
