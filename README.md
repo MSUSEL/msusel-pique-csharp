@@ -16,15 +16,8 @@ Additionally, this project provides the test cases and exercises used to verify 
 
 ## Building
 1. Ensure the [Build Environment](#build-environment) requirements are met.
-1. Ensure *msusel-pique* is installed as a resource as described in the [msusel-pique README](https://github.com/msusel-pique/msusel-pique/blob/master/README.md) (using `mvn install` in the *msusel-pique* cloned root directory).
-1. From the root directory of this project...
-    - Restore packages with `mvn dependency:resolve`
-        - Sometimes some extra tinkering is needed to make sure all dependencies are managed. Make sure you know your IDE or Java CLI and tools.
-    - Clean and build with `mvn clean compile`
-    - Verify main execution processes work (model derivation and product assessment using integrated test resources) using the integration test profile `mvn clean test -Pit`
-        - Runs an integration test verifying a connects C# static analysis tool, Roslynator, runs correctly on a real C# project.
-        - Runs an integration test verifying a C# model can be derived using Roslynator against a small benchmark repository.
-        - Runs an integration test verifying quality assessment on a real, C# project. 
+1. Ensure *msusel-pique* is installed as a resource as described in the [msusel-pique README](https://github.com/MSUSEL/msusel-pique) (using `mvn install` in the *msusel-pique* cloned root directory).
+
 
 ___
 
