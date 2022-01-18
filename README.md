@@ -18,9 +18,7 @@ Additionally, this project provides the test cases and exercises used to verify 
 1. Ensure the [Build Environment](#build-environment) requirements are met.
 1. Ensure *msusel-pique* is installed as a resource as described in the [msusel-pique README](https://github.com/MSUSEL/msusel-pique) (using `mvn install` in the *msusel-pique* cloned root directory).
 1. Clone repository into `<project_root>` folder
-1. Run `mvn test` from `<project_root>`. Fix test errors if needed. Errors, if they occur, will likely be from misconfiguration of R and the jsonlite library.
-1. Run `mvn install` from `<project_root>`. 
-
+1. Derive the model as defined in the Model Derivation section below
 ___
 
 ## Running - Run via command line or IDE from compiled source
