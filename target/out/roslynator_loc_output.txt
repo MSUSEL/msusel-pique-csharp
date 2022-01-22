@@ -1,14 +1,14 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load project 'C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj'
-Done loading project 'C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj'
-Count lines for 'ESMS.Outcome.Clients.GraphDbGenerator'
+Load solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln'
+Done loading solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln'
+Count lines for solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln'
 
- 98  71% lines of code
- 13   9% white-space lines
- 28  20% comment lines
-  0   0% preprocessor directive lines
-139 100% total lines
+0  NaN lines of code
+0  NaN white-space lines
+0  NaN comment lines
+0  NaN preprocessor directive lines
+0  NaN total lines
 
-Done counting lines for 'C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj' in 00:00.27
+Done counting lines for solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln' in 00:00.01

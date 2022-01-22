@@ -8,48 +8,48 @@
       <Diagnostic Id="RCS1226" Title="Add paragraph to documentation comment." Count="1" />
     </Summary>
     <Projects>
-      <Project Name="ESMS.Outcome.Clients.GraphDbGenerator" FilePath="C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj">
+      <Project Name="ESMS.Outcome.Clients.GraphDbGenerator" FilePath="E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj">
         <Diagnostics>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\ElementNeo4jExtractor.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ElementNeo4jExtractor.cs</FilePath>
             <Location Line="11" Character="9" />
           </Diagnostic>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
             <Location Line="10" Character="9" />
           </Diagnostic>
           <Diagnostic Id="RCS1226">
             <Severity>Info</Severity>
             <Message>Add paragraph to documentation comment.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
             <Location Line="3" Character="6" />
           </Diagnostic>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
             <Location Line="12" Character="11" />
           </Diagnostic>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
             <Location Line="14" Character="21" />
           </Diagnostic>
           <Diagnostic Id="RCS1102">
             <Severity>Warning</Severity>
             <Message>Make class static.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
             <Location Line="12" Character="11" />
           </Diagnostic>
           <Diagnostic Id="RCS1163">
             <Severity>Info</Severity>
             <Message>Unused parameter 'args'.</Message>
-            <FilePath>C:\Users\xuyin\Documents\CSHARP-DEMO\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
             <Location Line="14" Character="26" />
           </Diagnostic>
         </Diagnostics>

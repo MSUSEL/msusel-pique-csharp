@@ -26,6 +26,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import piquecsharp.runnable.SingleProjectEvaluator;
+
 /**
  * IToolLOC implementation using Roslynator CLI
  *
@@ -35,7 +40,11 @@ import java.util.regex.Pattern;
  * The .exe should be kept in resources/tools.
  */
 public class RoslynatorLoc extends RoslynatorTool implements ITool {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(RoslynatorLoc.class);
+
     private Path msBuild;
+
     /**
      * Constructor.
      * Roslynator analysis needs the MSBuild.exe path
@@ -90,6 +99,7 @@ public class RoslynatorLoc extends RoslynatorTool implements ITool {
         ProcessBuilder pb = null;
         Process p = null;
         try {
+            LOGGER.info("Tool used: " + tool.toString());
             pb = new ProcessBuilder(tool, command, msBuild, target, ">", output);
             pb.redirectOutput(new File(output));
             p = pb.start();
@@ -110,6 +120,7 @@ public class RoslynatorLoc extends RoslynatorTool implements ITool {
     public Map<String, Diagnostic> parseAnalysis(Path path) {
         String targetLine = null;
         int loc;
+        LOGGER.info("Roslynator Loc Output txt file: " + path.toString());
         try (BufferedReader br = new BufferedReader(new FileReader(path.toString()))) {
             String line = br.readLine();
             while (line != null) {

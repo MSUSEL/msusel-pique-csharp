@@ -185,6 +185,7 @@ public class SingleProjectEvaluator {
         // (1) run static analysis tool
         // TODO: turn this into a temp file that always deletes on/before program exit
         Path analysisOutput = tool.analyze(projectDir);
+        LOGGER.info(analysisOutput.toString());
 
         // (2) prase output: make collection of {Key: diagnostic name, Value: diagnostic objects}  b
         return tool.parseAnalysis(analysisOutput);
