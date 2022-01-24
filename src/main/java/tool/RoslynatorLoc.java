@@ -62,6 +62,7 @@ public class RoslynatorLoc extends RoslynatorTool implements ITool {
     @Override
     public Path analyze(Path path) {
         path = path.toAbsolutePath();
+        LOGGER.info("Path To Analyze " + path);
         File tempResults = new File(System.getProperty("user.dir") +"/out/roslynator_loc_output.txt");
         tempResults.getParentFile().mkdirs();
         // Append .sln or .csproj file to path
@@ -101,6 +102,7 @@ public class RoslynatorLoc extends RoslynatorTool implements ITool {
         try {
             LOGGER.info("Tool used: " + tool.toString());
             pb = new ProcessBuilder(tool, command, msBuild, target, ">", output);
+            LOGGER.info("Process Builder to get line of code " + pb.toString());
             pb.redirectOutput(new File(output));
             p = pb.start();
             p.waitFor();
@@ -135,8 +137,8 @@ public class RoslynatorLoc extends RoslynatorTool implements ITool {
         catch (IOException e) { e.printStackTrace(); }
         // parse the line of code integer
         assert targetLine != null;
+        LOGGER.info("Line of Code By Project Scan by RoslynatorLoc is " +  targetLine);
         Pattern p = Pattern.compile("\\d*,*\\d+");
-        System.out.println(targetLine);
         Matcher m = p.matcher(targetLine);
         if (m.find()) {
             loc = Integer.parseInt(m.group().replaceAll(",", ""));

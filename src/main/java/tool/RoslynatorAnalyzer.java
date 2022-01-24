@@ -13,7 +13,7 @@
  * as this file.
  */
 package tool;
-import com.sun.org.apache.xerces.internal.dom.DeferredElementImpl;
+import org.apache.xerces.dom.DeferredElementImpl;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

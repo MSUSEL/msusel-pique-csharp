@@ -61,28 +61,25 @@ public class SingleProjectEvaluator {
 
        Properties prop = null;
        try {
-           System.out.println("Finind it");
            prop = propertiesPath==null ? PiqueProperties.getProperties() : PiqueProperties.getProperties(propertiesPath);
-           System.out.println("Found it");
        } catch (IOException e) {
            // TODO Auto-generated catch block
            e.printStackTrace();
        }
 
-       System.out.println("I am project root");
        Path projectRoot = Paths.get(prop.getProperty("project.root"));
-       Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
+       //Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
        Path resultsDir = Paths.get(prop.getProperty("results.directory"));
 
        LOGGER.info("Project to analyze: " + projectRoot.toString());
 
        // Initialize objects
-       String projectRootFlag = prop.getProperty("target.flag");
-       Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
+       //String projectRootFlag = prop.getProperty("target.flag");
+       //Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
 
        Path qmLocation = Paths.get(prop.getProperty("derived.qm"));
-       Path resources = Paths.get(prop.getProperty("blankqm.filepath"));
-       resources = resources.toAbsolutePath().getParent();
+       //Path resources = Paths.get(prop.getProperty("blankqm.filepath"));
+       //resources = resources.toAbsolutePath().getParent();
 
 
        ITool roslynatorLoc = new RoslynatorLoc(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));

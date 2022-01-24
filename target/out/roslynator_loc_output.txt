@@ -1,9 +1,14 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln'
-Done loading solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln'
-Count lines for solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln'
+Load solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln'
+Done loading solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln'
+Count lines for solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln'
+
+Lines of code by project:
+0 ArchiSteamFarm                             C#
+0 ArchiSteamFarm.CustomPlugins.ExamplePlugin C#
+0 ArchiSteamFarm.Tests                       C#
 
 0  NaN lines of code
 0  NaN white-space lines
@@ -11,4 +16,4 @@ Count lines for solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\
 0  NaN preprocessor directive lines
 0  NaN total lines
 
-Done counting lines for solution 'C:\Users\Xuying Wang Swift\Downloads\ps-csproj-master\csproj.sln' in 00:00.01
+Done counting lines for solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln' in 00:00.14

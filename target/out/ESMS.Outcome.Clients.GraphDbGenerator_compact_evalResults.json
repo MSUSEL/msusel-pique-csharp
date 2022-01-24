@@ -99,7 +99,7 @@
       },
       "Structure": {
         "name": "Structure",
-        "value": 0.9230769230769230769230769,
+        "value": 0.8235294117647058823529412,
         "description": "The organization of classes, files, and methods. Includes object oriented concepts such as inheritance",
         "weights": {
           "Structure Smells": 1.0
@@ -123,7 +123,7 @@
     "quality_aspects": {
       "Performance Efficiency": {
         "name": "Performance Efficiency",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "This characteristic represents the performance relative to the amount of resources used under stated conditions",
         "weights": {
           "Functional Syntax": 0.1,
@@ -143,7 +143,7 @@
       },
       "Portability": {
         "name": "Portability",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another",
         "weights": {
           "Functional Syntax": 0.1,
@@ -163,7 +163,7 @@
       },
       "Maintainability": {
         "name": "Maintainability",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "This characteristic represents the degree of effectiveness and efficiency with which a product or system can be modified to improve it, correct it or adapt it to changes in environment, and in requirements",
         "weights": {
           "Functional Syntax": 0.1,
@@ -183,7 +183,7 @@
       },
       "Compatibility": {
         "name": "Compatibility",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "Degree to which a product, system or component can exchange information with other products, systems or components, and/or perform its required functions while sharing the same hardware or software environment",
         "weights": {
           "Functional Syntax": 0.1,
@@ -203,7 +203,7 @@
       },
       "Reliability": {
         "name": "Reliability",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time",
         "weights": {
           "Functional Syntax": 0.1,
@@ -223,7 +223,7 @@
       },
       "Security": {
         "name": "Security",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "Degree to which a product or system protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization",
         "weights": {
           "Functional Syntax": 0.1,
@@ -243,7 +243,7 @@
       },
       "Usability": {
         "name": "Usability",
-        "value": 0.99230769230769230769230769,
+        "value": 0.98235294117647058823529412,
         "description": "Degree to which a product or system can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use",
         "weights": {
           "Functional Syntax": 0.1,
@@ -265,7 +265,7 @@
     "tqi": {
       "CSharp Total Software Quality": {
         "name": "CSharp Total Software Quality",
-        "value": 0.9923076923076923076923074,
+        "value": 0.9823529411764705882352940,
         "description": "The total quality value representing the entire CSharp system",
         "weights": {
           "Performance Efficiency": 0.1428571428571428571428571,
@@ -298,7 +298,7 @@
       },
       "thresholds": [
         0,
-        5
+        8
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -348,7 +348,7 @@
       },
       "thresholds": [
         0,
-        12
+        14
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -463,7 +463,7 @@
       },
       "thresholds": [
         6,
-        28
+        30
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -490,7 +490,7 @@
       },
       "thresholds": [
         0,
-        4
+        9
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -510,7 +510,7 @@
       },
       "thresholds": [
         0,
-        5
+        7
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -558,7 +558,7 @@
     "Structure Smells": {
       "positive": false,
       "name": "Structure Smells",
-      "value": 0.92307692307692307692307692,
+      "value": 0.8235294117647058823529412,
       "description": "Code smells related to structure",
       "weights": {
         "RCS1160": 0.05263157894736842105263158,
@@ -582,8 +582,8 @@
         "RCS1187": 0.05263157894736842105263158
       },
       "thresholds": [
-        2,
-        15
+        0,
+        17
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
