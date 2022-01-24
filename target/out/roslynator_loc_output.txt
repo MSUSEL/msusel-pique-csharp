@@ -1,14 +1,9 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln'
-Done loading solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln'
-Count lines for solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln'
-
-Lines of code by project:
-0 ArchiSteamFarm                             C#
-0 ArchiSteamFarm.CustomPlugins.ExamplePlugin C#
-0 ArchiSteamFarm.Tests                       C#
+Load project 'E:\ESMS Repos\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual.csproj'
+Done loading project 'E:\ESMS Repos\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual.csproj'
+Count lines for 'ESMS.Assessments.API.Manual'
 
 0  NaN lines of code
 0  NaN white-space lines
@@ -16,4 +11,4 @@ Lines of code by project:
 0  NaN preprocessor directive lines
 0  NaN total lines
 
-Done counting lines for solution 'E:\Bench\bench-csharp-combo\ArchiSteamFarm\ArchiSteamFarm.sln' in 00:00.14
+Done counting lines for 'E:\ESMS Repos\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual.csproj' in 00:00.00

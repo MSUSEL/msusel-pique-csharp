@@ -2,55 +2,312 @@
 <Roslynator>
   <CodeAnalysis>
     <Summary>
+      <Diagnostic Id="CS1030" Title="#warning directive" Count="2" />
       <Diagnostic Id="RCS1018" Title="Add default access modifier." Count="4" />
-      <Diagnostic Id="RCS1102" Title="Make class static." Count="1" />
-      <Diagnostic Id="RCS1163" Title="Unused parameter." Count="1" />
+      <Diagnostic Id="RCS1036" Title="Remove redundant empty line." Count="36" />
+      <Diagnostic Id="RCS1037" Title="Remove trailing white-space." Count="3" />
+      <Diagnostic Id="RCS1093" Title="Remove file with no code." Count="1" />
+      <Diagnostic Id="RCS1146" Title="Use conditional access." Count="1" />
+      <Diagnostic Id="RCS1160" Title="Abstract type should not have public constructors." Count="1" />
+      <Diagnostic Id="RCS1169" Title="Make field read-only." Count="1" />
       <Diagnostic Id="RCS1226" Title="Add paragraph to documentation comment." Count="1" />
     </Summary>
     <Projects>
-      <Project Name="ESMS.Outcome.Clients.GraphDbGenerator" FilePath="E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator.csproj">
+      <Project Name="ESMS.Outcome.Data" FilePath="E:\ESMS Repos\ESMS.Outcome.Data\ESMS.Outcome.Data.csproj">
         <Diagnostics>
-          <Diagnostic Id="RCS1018">
+          <Diagnostic Id="RCS1037">
             <Severity>Info</Severity>
-            <Message>Add default access modifier.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\ElementNeo4jExtractor.cs</FilePath>
-            <Location Line="11" Character="9" />
+            <Message>Remove trailing white-space.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Context\Configurations\AssociationLinkConfiguration.cs</FilePath>
+            <Location Line="14" Character="4" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1160">
+            <Severity>Info</Severity>
+            <Message>Abstract type should not have public constructors.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Context\Configurations\BaseOutcomeConfiguration.cs</FilePath>
+            <Location Line="7" Character="16" />
           </Diagnostic>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
-            <Location Line="10" Character="9" />
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Context\NamespaceDoc.cs</FilePath>
+            <Location Line="13" Character="9" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Context\OutcomeDB.cs</FilePath>
+            <Location Line="69" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\_Extensions.cs</FilePath>
+            <Location Line="7" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\_Extensions.cs</FilePath>
+            <Location Line="17" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1146">
+            <Severity>Info</Severity>
+            <Message>Use conditional access.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\_Extensions.cs</FilePath>
+            <Location Line="10" Character="48" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IActivity.cs</FilePath>
+            <Location Line="5" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IAssociationGroup.cs</FilePath>
+            <Location Line="5" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IAssociationGroupOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IAssociationLink.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IEffectFormula.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IGlobal.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IModel.cs</FilePath>
+            <Location Line="5" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IOutcomeAttribute.cs</FilePath>
+            <Location Line="6" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IOutcomeAttributeCategory.cs</FilePath>
+            <Location Line="5" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IOutcomeObject.cs</FilePath>
+            <Location Line="5" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IOutcomeObjectOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="3" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Entities\IOutcomeObjectOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="5" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\FunctionType.cs</FilePath>
+            <Location Line="3" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="CS1030">
+            <Severity>Warning</Severity>
+            <Message>#warning: 'bad summary'</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeAttributeClassification.cs</FilePath>
+            <Location Line="2" Character="10" />
           </Diagnostic>
           <Diagnostic Id="RCS1226">
             <Severity>Info</Severity>
             <Message>Add paragraph to documentation comment.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\NamespaceDoc.cs</FilePath>
-            <Location Line="3" Character="6" />
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeAttributeClassification.cs</FilePath>
+            <Location Line="4" Character="6" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeDataTypeExtensions.cs</FilePath>
+            <Location Line="11" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeDataTypeExtensions.cs</FilePath>
+            <Location Line="51" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1037">
+            <Severity>Info</Severity>
+            <Message>Remove trailing white-space.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeDataTypeExtensions.cs</FilePath>
+            <Location Line="11" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1037">
+            <Severity>Info</Severity>
+            <Message>Remove trailing white-space.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeDataTypeExtensions.cs</FilePath>
+            <Location Line="15" Character="118" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1169">
+            <Severity>Info</Severity>
+            <Message>Make field read-only.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\Enums\OutcomeDataTypeExtensions.cs</FilePath>
+            <Location Line="15" Character="5" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IAttributedNode.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IAttributedNode.cs</FilePath>
+            <Location Line="17" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IDescriptive.cs</FilePath>
+            <Location Line="3" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IDiscreteEntity.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IDiscreteEntityWithModel.cs</FilePath>
+            <Location Line="3" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IDiscreteEntityWithType.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\IIdentifiable.cs</FilePath>
+            <Location Line="4" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\INamed.cs</FilePath>
+            <Location Line="3" Character="1" />
           </Diagnostic>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
-            <Location Line="12" Character="11" />
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Contracts\NamespaceDoc.cs</FilePath>
+            <Location Line="7" Character="9" />
           </Diagnostic>
           <Diagnostic Id="RCS1018">
             <Severity>Info</Severity>
             <Message>Add default access modifier.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
-            <Location Line="14" Character="21" />
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\NamespaceDoc.cs</FilePath>
+            <Location Line="7" Character="9" />
           </Diagnostic>
-          <Diagnostic Id="RCS1102">
-            <Severity>Warning</Severity>
-            <Message>Make class static.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
-            <Location Line="12" Character="11" />
-          </Diagnostic>
-          <Diagnostic Id="RCS1163">
+          <Diagnostic Id="RCS1093">
             <Severity>Info</Severity>
-            <Message>Unused parameter 'args'.</Message>
-            <FilePath>E:\ESMS Repos\ESMS.Outcome.Clients.GraphDbGenerator\ESMS.Outcome.Clients.GraphDbGenerator\Program.cs</FilePath>
-            <Location Line="14" Character="26" />
+            <Message>Remove file with no code.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\OutcomeDB.cs</FilePath>
+            <Location Line="1" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\AssociationGroup.cs</FilePath>
+            <Location Line="9" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\AssociationGroup.cs</FilePath>
+            <Location Line="22" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\AssociationGroupOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="7" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\AssociationGroupOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="12" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\AssociationLink.cs</FilePath>
+            <Location Line="10" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\AssociationLink.cs</FilePath>
+            <Location Line="18" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1018">
+            <Severity>Info</Severity>
+            <Message>Add default access modifier.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\OutcomeAttributeCategory.cs</FilePath>
+            <Location Line="4" Character="17" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\OutcomeObject.cs</FilePath>
+            <Location Line="12" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\OutcomeObject.cs</FilePath>
+            <Location Line="25" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\OutcomeObjectOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="7" Character="1" />
+          </Diagnostic>
+          <Diagnostic Id="RCS1036">
+            <Severity>Info</Severity>
+            <Message>Remove redundant empty line.</Message>
+            <FilePath>E:\ESMS Repos\ESMS.Outcome.Data\Entities\Partials\OutcomeObjectOutcomeAttributeInitialValue.cs</FilePath>
+            <Location Line="12" Character="1" />
           </Diagnostic>
         </Diagnostics>
       </Project>
