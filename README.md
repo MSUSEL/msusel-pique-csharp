@@ -23,13 +23,16 @@ ___
 
 ## Deployment - Run quality assessment via an OS-independent JAR 
 (todo)
-- Download PiqueCsharp-jar-with-dependencies.jar[] into a directory that contains the project needed to be analyzed.
-- Download pique-properties.properties[] into a directory that contains the project needed to be analyzed.
-- Download pique_csharp_model.json[] into a directory that contains the project needed to be analyzed.
-- Download piqueCsharpBenchmarkRepo[]
-- run java -jar PiqueCsharp-jar-with-dependencies.jar -d to derive a derived model.
-- run java -jar PiqueCsharp-jar-with-dependencies.jar -d to evaluate.
-- find the evaluated result file in /out directory.
+- step 1: Download [PiqueCsharp-jar-with-dependencies.jar] (https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/PiqueCsharp-jar-with-dependencies.jar) into a directory that contains the project needed to be analyzed.
+- setp 2: Download [pique-properties.properties](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/pique-properties.properties) into a directory that contains the project needed to be analyzed.
+- step 3: point project.root= to your desired project in pique-properties.properties file
+- step 4: Download [pique_csharp_model.json](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/pique_csharp_model.json) into a directory that contains the project needed to be analyzed.
+- step 5: Download [piqueCsharpBenchmarkRepo]()
+- step 6: point benchmark.rep= to your piqueCsharpBenchmarkRep in pique-properties.properties file
+- you can also ignore step 5 and step 6, directly download the [derieved model]()
+- step 7: run java -jar PiqueCsharp-jar-with-dependencies.jar -d to derive a derived model.
+- step 8: run java -jar PiqueCsharp-jar-with-dependencies.jar -e to evaluate.
+- step 9: find the evaluated result file in /out directory.
 
 
 
