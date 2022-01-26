@@ -1,58 +1,14 @@
 Roslynator Command Line Tool version 0.1.0.3
 Copyright (c) Josef Pihrt. All rights reserved.
 
-Load solution 'E:\Bench\bench-csharp\msbuild\MSBuild.sln'
-Done loading solution 'E:\Bench\bench-csharp\msbuild\MSBuild.sln'
-Count lines for solution 'E:\Bench\bench-csharp\msbuild\MSBuild.sln'
+Load project 'C:\Users\Xuying Wang Swift\Desktop\ESMS Repos\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual.csproj'
+Done loading project 'C:\Users\Xuying Wang Swift\Desktop\ESMS Repos\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual.csproj'
+Count lines for 'ESMS.Assessments.API.Manual'
 
-Lines of code by project:
-90,493 Microsoft.Build(netcoreapp2.1)                       C#
-89,586 Microsoft.Build(net472)                              C#
-77,796 Microsoft.Build.Engine.UnitTests(netcoreapp2.1)      C#
-75,740 Microsoft.Build.Engine.UnitTests(net472)             C#
-60,355 Microsoft.Build.Tasks(net472)                        C#
-50,646 Microsoft.Build.Tasks.UnitTests(net472)              C#
-43,944 Microsoft.Build.Engine                               C#
-40,528 Microsoft.Build.Tasks(netstandard2.0)                C#
-37,559 Microsoft.Build.Engine.OM.UnitTests(netcoreapp2.1)   C#
-37,526 Microsoft.Build.Engine.OM.UnitTests(net472)          C#
-27,100 Microsoft.Build.Tasks.UnitTests(netcoreapp2.1)       C#
-22,296 Microsoft.Build.Utilities(netstandard2.0)            C#
-19,573 Microsoft.Build.Utilities(net472)                    C#
-17,316 MSBuild(netcoreapp2.1)                               C#
-16,866 MSBuild(net472)                                      C#
-15,845 Microsoft.Build.Utilities.UnitTests(netcoreapp2.1)   C#
-14,250 Microsoft.Build.Utilities.UnitTests(net472)          C#
-12,665 MSBuildTaskHost                                      C#
- 7,245 Microsoft.Build.Framework.UnitTests(net472)          C#
- 7,245 Microsoft.Build.Framework.UnitTests(netcoreapp2.1)   C#
- 6,137 Microsoft.Build.CommandLine.UnitTests(netcoreapp2.1) C#
- 5,941 Microsoft.Build.CommandLine.UnitTests(net472)        C#
- 4,650 Microsoft.Build.Framework(net472)                    C#
- 3,534 Microsoft.Build.Framework(netstandard2.0)            C#
- 3,085 Microsoft.Build.Conversion                           C#
-   870 XmlFileLogger(net472)                                C#
-   870 XmlFileLogger(netstandard2.0)                        C#
-   747 Xunit.NetCore.Extensions(net472)                     C#
-   747 Xunit.NetCore.Extensions(netstandard2.0)             C#
-   300 TaskUsageLogger(net472)                              C#
-   300 TaskUsageLogger(netstandard2.0)                      C#
-    69 PortableTask                                         C#
-    28 Dependency(net472)                                   C#
-    28 Dependency(netstandard2.0)                           C#
-    27 TaskWithDependency(net472)                           C#
-    27 TaskWithDependency(netstandard2.0)                   C#
-     0 DevDivPackage                                        C#
-     0 Localization                                         C#
-     0 MSBuild.Bootstrap(net472)                            C#
-     0 MSBuild.Bootstrap(netcoreapp2.1)                     C#
-     0 MSBuild.Engine.Corext                                C#
-     0 MSBuild.VSSetup                                      C#
+137  86% lines of code
+ 21  13% white-space lines
+  2   1% comment lines
+  0   0% preprocessor directive lines
+160 100% total lines
 
-  791,934  65% lines of code
-  153,239  13% white-space lines
-  261,471  21% comment lines
-   13,937   1% preprocessor directive lines
-1,220,581 100% total lines
-
-Done counting lines for solution 'E:\Bench\bench-csharp\msbuild\MSBuild.sln' in 00:27.69
+Done counting lines for 'C:\Users\Xuying Wang Swift\Desktop\ESMS Repos\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual\ESMS.Assessments.API.Manual.csproj' in 00:00.29

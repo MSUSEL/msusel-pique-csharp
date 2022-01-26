@@ -214,8 +214,8 @@
               "RCS1233": 0.0625
             },
             "thresholds": [
-              10,
-              10
+              0,
+              14
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -856,8 +856,8 @@
               "RCS1134": 0.01960784313725490196078431
             },
             "thresholds": [
-              39,
-              39
+              6,
+              48
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -946,8 +946,8 @@
               "RCS1210": 0.2
             },
             "thresholds": [
-              2,
-              2
+              0,
+              7
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -1120,8 +1120,8 @@
               "RCS1013": 0.08333333333333333333333333
             },
             "thresholds": [
-              2,
-              2
+              0,
+              9
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -1234,8 +1234,8 @@
               "RCS1232": 0.1428571428571428571428571
             },
             "thresholds": [
-              8,
-              8
+              0,
+              10
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -1553,7 +1553,7 @@
             },
             "thresholds": [
               0,
-              0
+              4
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -1654,8 +1654,8 @@
               "RCS1210": 0.1666666666666666666666667
             },
             "thresholds": [
-              5,
-              5
+              0,
+              8
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -1829,7 +1829,7 @@
             },
             "thresholds": [
               0,
-              0
+              9
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -2086,8 +2086,8 @@
               "RCS1187": 0.05263157894736842105263158
             },
             "thresholds": [
-              22,
-              22
+              0,
+              27
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -2165,7 +2165,7 @@
             },
             "thresholds": [
               0,
-              0
+              5
             ],
             "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
             "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -2393,8 +2393,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -3035,8 +3035,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -3125,8 +3125,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -3299,8 +3299,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -3413,8 +3413,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -3732,7 +3732,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -3833,8 +3833,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -4008,7 +4008,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -4265,8 +4265,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -4344,7 +4344,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -4587,8 +4587,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -5229,8 +5229,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -5319,8 +5319,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -5493,8 +5493,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -5607,8 +5607,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -5926,7 +5926,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -6027,8 +6027,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -6202,7 +6202,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -6459,8 +6459,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -6538,7 +6538,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -6781,8 +6781,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -7423,8 +7423,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -7513,8 +7513,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -7687,8 +7687,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -7801,8 +7801,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -8120,7 +8120,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -8221,8 +8221,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -8396,7 +8396,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -8653,8 +8653,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -8732,7 +8732,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -8975,8 +8975,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -9617,8 +9617,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -9707,8 +9707,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -9881,8 +9881,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -9995,8 +9995,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -10314,7 +10314,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -10415,8 +10415,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -10590,7 +10590,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -10847,8 +10847,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -10926,7 +10926,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -11169,8 +11169,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -11811,8 +11811,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -11901,8 +11901,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -12075,8 +12075,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -12189,8 +12189,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -12508,7 +12508,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -12609,8 +12609,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -12784,7 +12784,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -13041,8 +13041,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -13120,7 +13120,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -13363,8 +13363,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14005,8 +14005,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14095,8 +14095,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14269,8 +14269,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14383,8 +14383,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14702,7 +14702,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14803,8 +14803,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -14978,7 +14978,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -15235,8 +15235,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -15314,7 +15314,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -15557,8 +15557,8 @@
                   "RCS1233": 0.0625
                 },
                 "thresholds": [
-                  10,
-                  10
+                  0,
+                  14
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -16199,8 +16199,8 @@
                   "RCS1134": 0.01960784313725490196078431
                 },
                 "thresholds": [
-                  39,
-                  39
+                  6,
+                  48
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -16289,8 +16289,8 @@
                   "RCS1210": 0.2
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  7
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -16463,8 +16463,8 @@
                   "RCS1013": 0.08333333333333333333333333
                 },
                 "thresholds": [
-                  2,
-                  2
+                  0,
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -16577,8 +16577,8 @@
                   "RCS1232": 0.1428571428571428571428571
                 },
                 "thresholds": [
-                  8,
-                  8
+                  0,
+                  10
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -16896,7 +16896,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  4
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -16997,8 +16997,8 @@
                   "RCS1210": 0.1666666666666666666666667
                 },
                 "thresholds": [
-                  5,
-                  5
+                  0,
+                  8
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -17172,7 +17172,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  9
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -17429,8 +17429,8 @@
                   "RCS1187": 0.05263157894736842105263158
                 },
                 "thresholds": [
-                  22,
-                  22
+                  0,
+                  27
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -17508,7 +17508,7 @@
                 },
                 "thresholds": [
                   0,
-                  0
+                  5
                 ],
                 "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                 "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -17758,8 +17758,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -18400,8 +18400,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -18490,8 +18490,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -18664,8 +18664,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -18778,8 +18778,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -19097,7 +19097,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -19198,8 +19198,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -19373,7 +19373,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -19630,8 +19630,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -19709,7 +19709,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -19952,8 +19952,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -20594,8 +20594,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -20684,8 +20684,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -20858,8 +20858,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -20972,8 +20972,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -21291,7 +21291,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -21392,8 +21392,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -21567,7 +21567,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -21824,8 +21824,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -21903,7 +21903,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -22146,8 +22146,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -22788,8 +22788,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -22878,8 +22878,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -23052,8 +23052,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -23166,8 +23166,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -23485,7 +23485,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -23586,8 +23586,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -23761,7 +23761,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -24018,8 +24018,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -24097,7 +24097,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -24340,8 +24340,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -24982,8 +24982,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -25072,8 +25072,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -25246,8 +25246,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -25360,8 +25360,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -25679,7 +25679,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -25780,8 +25780,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -25955,7 +25955,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -26212,8 +26212,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -26291,7 +26291,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -26534,8 +26534,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -27176,8 +27176,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -27266,8 +27266,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -27440,8 +27440,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -27554,8 +27554,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -27873,7 +27873,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -27974,8 +27974,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -28149,7 +28149,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -28406,8 +28406,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -28485,7 +28485,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -28728,8 +28728,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -29370,8 +29370,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -29460,8 +29460,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -29634,8 +29634,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -29748,8 +29748,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -30067,7 +30067,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -30168,8 +30168,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -30343,7 +30343,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -30600,8 +30600,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -30679,7 +30679,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -30922,8 +30922,8 @@
                       "RCS1233": 0.0625
                     },
                     "thresholds": [
-                      10,
-                      10
+                      0,
+                      14
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -31564,8 +31564,8 @@
                       "RCS1134": 0.01960784313725490196078431
                     },
                     "thresholds": [
-                      39,
-                      39
+                      6,
+                      48
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -31654,8 +31654,8 @@
                       "RCS1210": 0.2
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      7
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -31828,8 +31828,8 @@
                       "RCS1013": 0.08333333333333333333333333
                     },
                     "thresholds": [
-                      2,
-                      2
+                      0,
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -31942,8 +31942,8 @@
                       "RCS1232": 0.1428571428571428571428571
                     },
                     "thresholds": [
-                      8,
-                      8
+                      0,
+                      10
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -32261,7 +32261,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      4
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -32362,8 +32362,8 @@
                       "RCS1210": 0.1666666666666666666666667
                     },
                     "thresholds": [
-                      5,
-                      5
+                      0,
+                      8
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -32537,7 +32537,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      9
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -32794,8 +32794,8 @@
                       "RCS1187": 0.05263157894736842105263158
                     },
                     "thresholds": [
-                      22,
-                      22
+                      0,
+                      27
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -32873,7 +32873,7 @@
                     },
                     "thresholds": [
                       0,
-                      0
+                      5
                     ],
                     "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
                     "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -33003,8 +33003,8 @@
         "RCS1210": 0.1666666666666666666666667
       },
       "thresholds": [
-        5,
-        5
+        0,
+        8
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -33069,7 +33069,7 @@
       },
       "thresholds": [
         0,
-        0
+        5
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -33277,8 +33277,8 @@
         "RCS1233": 0.0625
       },
       "thresholds": [
-        10,
-        10
+        0,
+        14
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -33439,7 +33439,7 @@
       },
       "thresholds": [
         0,
-        0
+        9
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -33539,8 +33539,8 @@
         "RCS1232": 0.1428571428571428571428571
       },
       "thresholds": [
-        8,
-        8
+        0,
+        10
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -34168,8 +34168,8 @@
         "RCS1134": 0.01960784313725490196078431
       },
       "thresholds": [
-        39,
-        39
+        6,
+        48
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -34329,8 +34329,8 @@
         "RCS1013": 0.08333333333333333333333333
       },
       "thresholds": [
-        2,
-        2
+        0,
+        9
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -34406,8 +34406,8 @@
         "RCS1210": 0.2
       },
       "thresholds": [
-        2,
-        2
+        0,
+        7
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -34712,7 +34712,7 @@
       },
       "thresholds": [
         0,
-        0
+        4
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
@@ -34956,8 +34956,8 @@
         "RCS1187": 0.05263157894736842105263158
       },
       "thresholds": [
-        22,
-        22
+        0,
+        27
       ],
       "eval_strategy": "pique.evaluation.DefaultMeasureEvaluator",
       "normalizer": "pique.evaluation.DefaultNormalizer",
