@@ -29,7 +29,8 @@ ___
 - step 4: Download [pique_csharp_model.json](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/pique_csharp_model.json) into a directory that contains the project needed to be analyzed.
 - step 5: Download [piqueCsharpBenchmarkRepo]()
 - step 6: point benchmark.rep= to your piqueCsharpBenchmarkRep in pique-properties.properties file
-- you can also ignore step 5 and step 6, directly download the [derieved model]()
+- you can also ignore step 5 and step 6, directly download the [derieved model](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/out/CSharpQualityModel.json)
+- and then point derived.qm= to [derieved model](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/out/CSharpQualityModel.json)
 - step 7: run java -jar PiqueCsharp-jar-with-dependencies.jar -d to derive a derived model.
 - step 8: run java -jar PiqueCsharp-jar-with-dependencies.jar -e to evaluate.
 - step 9: find the evaluated result file in /out directory.
