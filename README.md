@@ -23,7 +23,7 @@ ___
 
 ## Deployment - Run quality assessment via an OS-independent JAR 
 (todo)
-- step 1: Download [PiqueCsharp-jar-with-dependencies.jar] (https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/PiqueCsharp-jar-with-dependencies.jar) into a directory that contains the project needed to be analyzed.
+- step 1: Download [PiqueCsharp-jar-with-dependencies.jar](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/PiqueCsharp-jar-with-dependencies.jar) into a directory that contains the project needed to be analyzed.
 - setp 2: Download [pique-properties.properties](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/pique-properties.properties) into a directory that contains the project needed to be analyzed.
 - step 3: point project.root= to your desired project in pique-properties.properties file
 - step 4: Download [pique_csharp_model.json](https://github.com/MSUSEL/msusel-pique-csharp/blob/main/target/pique_csharp_model.json) into a directory that contains the project needed to be analyzed.
