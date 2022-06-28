@@ -56,15 +56,7 @@ public class SingleProjectEvaluator {
 
    public void init (String propertiesLocation) {
        LOGGER.info("Starting Analysis");
-
-       Properties prop = null;
-       try {
-           prop = propertiesLocation==null ? PiqueProperties.getProperties() : PiqueProperties.getProperties(propertiesLocation);
-       } catch (IOException e) {
-           // TODO Auto-generated catch block
-           e.printStackTrace();
-       }
-
+       Properties prop = PiqueProperties.getProperties();
        Path projectRoot = Paths.get(prop.getProperty("project.root"));
        Path resultsDir = Paths.get(prop.getProperty("results.directory"));
 

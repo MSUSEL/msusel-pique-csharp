@@ -57,13 +57,7 @@ public class QualityModelDeriver {
     private void init(String propertiesPath){
         LOGGER.info("Begin deriver");
 
-        Properties prop = null;
-        try{
-            prop = propertiesPath == null ? PiqueProperties.getProperties() : PiqueProperties.getProperties(propertiesPath);
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        Properties prop = PiqueProperties.getProperties();
         Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
         Path derivedModelFilePath = Paths.get(prop.getProperty("results.directory"));
         String projectRootFlag = prop.getProperty("target.flag");
