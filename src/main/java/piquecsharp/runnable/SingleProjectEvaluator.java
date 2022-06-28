@@ -25,14 +25,12 @@ import tool.RoslynatorAnalyzer;
 import tool.RoslynatorLoc;
 import pique.utility.PiqueProperties;
 
+import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -56,41 +54,41 @@ public class SingleProjectEvaluator {
     }
 
 
-   public void init (String propertiesPath) {
+   public void init (String propertiesLocation) {
        LOGGER.info("Starting Analysis");
 
        Properties prop = null;
        try {
-           prop = propertiesPath==null ? PiqueProperties.getProperties() : PiqueProperties.getProperties(propertiesPath);
+           prop = propertiesLocation==null ? PiqueProperties.getProperties() : PiqueProperties.getProperties(propertiesLocation);
        } catch (IOException e) {
            // TODO Auto-generated catch block
            e.printStackTrace();
        }
 
        Path projectRoot = Paths.get(prop.getProperty("project.root"));
-       //Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
        Path resultsDir = Paths.get(prop.getProperty("results.directory"));
 
        LOGGER.info("Project to analyze: " + projectRoot.toString());
 
-       // Initialize objects
-       //String projectRootFlag = prop.getProperty("target.flag");
-       //Path benchmarkRepo = Paths.get(prop.getProperty("benchmark.repo"));
-
        Path qmLocation = Paths.get(prop.getProperty("derived.qm"));
-       //Path resources = Paths.get(prop.getProperty("blankqm.filepath"));
-       //resources = resources.toAbsolutePath().getParent();
-
 
        ITool roslynatorLoc = new RoslynatorLoc(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
        ITool roslynator = new RoslynatorAnalyzer(Paths.get(prop.getProperty("roslynator.tool.root")), Paths.get(prop.getProperty("msbuild.bin")));
        Set<ITool> tools = Stream.of(roslynatorLoc, roslynator).collect(Collectors.toSet());
-       Path outputPath = runEvaluator(projectRoot, resultsDir, qmLocation, tools);
-       System.out.println("output: " + outputPath.getFileName());
+
+       Set<Path> projectRoots = new HashSet<>();
+       File[] filesToAssess = projectRoot.toFile().listFiles();
+       for (File f : filesToAssess) {
+           if (f.isFile()) {
+               projectRoots.add(f.toPath());
+           }
+       }
+       for (Path projectPath : projectRoots) {
+           Path outputPath = runEvaluator(projectPath, resultsDir, qmLocation, tools);
+           LOGGER.info("output: " + outputPath.getFileName());
+           System.out.println("output: " + outputPath.getFileName());
+       }
    }
-
-
-
 
     //region Get / Set
     public Project getEvaluatedProject() {
@@ -210,12 +208,6 @@ public class SingleProjectEvaluator {
             if (characteristic.getWeights() == null) {
                 throw new RuntimeException("The project's quality model does not have any weights instantiated to its characteristic node");
             }
-
-//            characteristic.getChildren().values().forEach(productFactor -> {
-//                if (productFactor.getMeasure().getThresholds() == null) {
-//                    throw new RuntimeException("The project's quality model does not have any thresholds instantiated to its measure node.");
-//                }
-//            });
         });
     }
 }
