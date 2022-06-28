@@ -23,7 +23,7 @@ import pique.model.QualityModel;
 import pique.model.QualityModelImport;
 import tool.RoslynatorAnalyzer;
 import tool.RoslynatorLoc;
-import pique.utility.PiqueProperties;
+import utilities.PiqueProperties;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,7 +56,8 @@ public class SingleProjectEvaluator {
 
    public void init (String propertiesLocation) {
        LOGGER.info("Starting Analysis");
-       Properties prop = PiqueProperties.getProperties();
+       Properties prop = PiqueProperties.getProperties(propertiesLocation);
+
        Path projectRoot = Paths.get(prop.getProperty("project.root"));
        Path resultsDir = Paths.get(prop.getProperty("results.directory"));
 

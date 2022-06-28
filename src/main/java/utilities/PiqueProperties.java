@@ -18,15 +18,15 @@ import java.io.FileReader;
 import java.util.Properties;
 
 public class PiqueProperties {
-    public static Properties getProperties(){
+    public static Properties getProperties(String propertiesLocation){
 
         Properties prop = new Properties();
         try {
-            prop.load(new FileReader("src/main/resources/pique-properties.properties"));
+            prop.load(new FileReader(propertiesLocation));
 
         }catch(Exception e){
             try {
-                prop.load(new FileReader("pique-properties.properties")); // this is the case when running from the .jar version of pique
+                prop.load(new FileReader("src/main/resources/pique-properties.properties")); // this is the case when running from the .jar version of pique
             }
             catch(Exception e2){
                 e2.printStackTrace();
