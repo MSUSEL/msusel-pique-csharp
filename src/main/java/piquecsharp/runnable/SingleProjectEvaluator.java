@@ -43,20 +43,21 @@ public class SingleProjectEvaluator {
     private static final Logger LOGGER = LoggerFactory.getLogger(SingleProjectEvaluator.class);
 
     private Project project;
-
+    String propertiesLocation = "src/main/resources/pique-properties.properties";
     // constructor
-    public SingleProjectEvaluator(String propertiesPath){
-        init(propertiesPath);
+    public SingleProjectEvaluator(String propertiesLocation){
+        init(propertiesLocation);
     }
 
     public SingleProjectEvaluator(){
-        init(null);
+        init(propertiesLocation );
     }
 
 
    public void init (String propertiesLocation) {
        LOGGER.info("Starting Analysis");
-       Properties prop = PiqueProperties.getProperties(propertiesLocation);
+       Properties prop = null;
+       prop = propertiesLocation == null ? pique.utility.PiqueProperties.getProperties() : utilities.PiqueProperties.getProperties();
 
        Path projectRoot = Paths.get(prop.getProperty("project.root"));
        Path resultsDir = Paths.get(prop.getProperty("results.directory"));

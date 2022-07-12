@@ -13,6 +13,8 @@
  * as this file.
  */
 package piquecsharp.runnable;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.nio.file.Path;
@@ -46,18 +48,19 @@ import org.slf4j.LoggerFactory;
  */
 public class QualityModelDeriver {
     private static final Logger LOGGER = LoggerFactory.getLogger(QualityModelDeriver.class);
-
+    String propertiesPath = "src/main/resources/pique-properties.properties";
     public QualityModelDeriver(String propertiesPath) {
         init(propertiesPath);
     }
-
     public QualityModelDeriver() {
-        init(null);
+        init(propertiesPath);
     }
     private void init(String propertiesPath){
         LOGGER.info("Begin deriver");
 
-        Properties prop = PiqueProperties.getProperties();
+        Properties prop = null;
+        prop = propertiesPath == null ? PiqueProperties.getProperties() : utilities.PiqueProperties.getProperties();
+
         Path blankqmFilePath = Paths.get(prop.getProperty("blankqm.filepath"));
         Path derivedModelFilePath = Paths.get(prop.getProperty("results.directory"));
         String projectRootFlag = prop.getProperty("target.flag");
